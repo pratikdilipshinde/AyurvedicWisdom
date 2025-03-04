@@ -10,13 +10,13 @@ import tulsiImage from "../assets/images/tulsi.png"; // Replace with Tulsi image
 
 const Introduction = () => {
   return (
-    <div className="relative bg-blue-50 py-10 md:pb-14 px-6 md:px-16 lg:px-32 font-messiri md:mt-6">
+    <div className="relative bg-[#c5e2b2] py-8 md:pb-12 px-6 md:px-12 lg:px-32 font-messiri md:mt-2">
       
       {/* Background Overlay with Opacity */}
-      <div 
+      {/* <div 
         className="absolute inset-0 bg-cover bg-center opacity-10"
         style={{ backgroundImage: `url(${introbg})` }}
-      ></div>
+      ></div> */}
 
       {/* Content Wrapper to Ensure Visibility */}
       <div className="relative z-10">

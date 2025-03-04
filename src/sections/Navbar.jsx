@@ -101,9 +101,9 @@ const Navbar = () => {
     <nav
       className={` w-full transition-all duration-200 ${
         isScrolled
-          ? "absolute lg:top-28 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-5 py-4"
+          ? "absolute lg:top-28 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-6 py-4"
           // ? "fixed top-0 left-0 bg-white shadow-md py-7"
-          : "absolute lg:top-28 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-5 py-4"
+          : "absolute lg:top-28 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-6 py-4"
       } z-40 flex justify-between items-center px-6 lg:px-20`}
     >
       {/* Desktop Navigation (Hover Effect for Large Screens) */}

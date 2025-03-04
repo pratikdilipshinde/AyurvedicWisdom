@@ -23,52 +23,66 @@ const TulsiBenefits = () => {
     { title: "Fights Cancer", img: tulsi6, description: "Helps stop the progression of breast cancer and oral cancer. This is because its compounds restrict the flow of blood to the tumor by attacking the blood vessels." },
     { title: "Helps Quit Smoking", img: tulsi7, description: "It helps by lowering stress that leads to the urge to smoke. It also has a cooling effect on the throat just like menthol drops." },
     { title: "Healthy Skin & Hair", img: tulsi8, description: "When eaten raw, it purifies the blood giving the skin a beautiful glow, and prevents the appearance of acne and blemishes. Mix the powder in coconut oil and apply regularly to the scalp to prevent hair fall." },
-    { title: "Relieves Respiratory Issues", img: tulsi9, description: "Tulsi boosts immunity, suppresses cough, and expels phlegm, providing relief from colds, bronchitis, and respiratory issues. Its essential oils, including camphene, Eugenol, and Cineole, help treat allergic respiratory disorders." },
+    
+  ];
 
+  const benefit_last = [
+    { title: "Relieves Respiratory Issues", img: tulsi9, description: "Tulsi boosts immunity, suppresses cough, and expels phlegm, providing relief from colds, bronchitis, and respiratory issues. Its essential oils, including camphene, Eugenol, and Cineole, help treat allergic respiratory disorders." },
   ];
 
   return (
-    <div className="font-messiri bg-lime-200 py-16 px-6 md:px-16 lg:px-32">
-      <h2 className="text-5xl font-bold text-center text-gray-900 mb-8">Medicinal Benefits of Tulsi</h2>
+    <div className="font-messiri bg-[#c5e2b2] pb-2 pt-1 px-2 md:px-4 lg:px-4">
+      <h2 className="text-5xl font-bold text-center text-gray-900 mb-8">Health Benefits of Tulsi</h2>
 
       {/* Card Grid */}
-      <div className="grid md:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-4 gap-4 px-4">
         {benefits.map((benefit, index) => (
           <div key={index} className="bg-green-800 rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105">
             {/* <div className="overflow-hidden rounded-t-3xl">
               <img src={benefit.img} alt={benefit.title} className="w-full h-60 object-cover transition-transform duration-500 hover:scale-110" />
             </div> */}
-            <div className="p-5">
-              <h3 className="text-2xl font-semibold text-white text-center">{benefit.title}</h3>
-              <h4 className="text-white mt-2 text-lg">{benefit.description}</h4>
+            <div className="p-4">
+              <h3 className="text-xl font-semibold text-white text-center">{benefit.title}</h3>
+              <h4 className="text-white mt-2 text-base">{benefit.description}</h4>
               {/* <a href="#" className="mt-4 block text-indigo-600 font-semibold hover:text-indigo-800">Read More</a> */}
             </div>
           </div>
         ))}
       </div>
-      <div className="grid md:grid-cols-2 gap-2 mt-10">
+      <div className="grid md:grid-cols-3 gap-2 mt-10 px-4 md:px-32">
         <div className="flex-col justify-center m-auto">
           <img
               src={neemImage}
               alt="Neem Leaf"
-              className="rounded-xl shadow-2xl w-96 md:w-60 md:h-60 bg-green-200 bg-opacity-40"
+              className="rounded-xl shadow-2xl w-96 md:w-52 md:h-52 bg-green-200 bg-opacity-40 overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105"
             />
           <h4 className='text-green-800 text-center text-3xl md:text-2xl font-bold mt-4'>Neem Leaf</h4>
-          {/* <img
-            src={neemImage}
-            alt="Ayurvedic Herbs"
-            className=" rounded-xl shadow-2xl w-full md:w-60 md:h-60 bg-green-200 bg-opacity-40"
-          />
-          <h4 className=' text-green-800 text-center text-2xl font-bold mt-4'>Neem Leaf </h4> */}
+        </div>
+        <div className="flex-col justify-center m-auto">
+          {benefit_last.map((benefit, index) => (
+            <div key={index} className="bg-green-800 rounded-3xl shadow-lg overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105">
+              {/* <div className="overflow-hidden rounded-t-3xl">
+                <img src={benefit.img} alt={benefit.title} className="w-full h-60 object-cover transition-transform duration-500 hover:scale-110" />
+              </div> */}
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-white text-center">{benefit.title}</h3>
+                <h4 className="text-white mt-2 text-base">{benefit.description}</h4>
+                {/* <a href="#" className="mt-4 block text-indigo-600 font-semibold hover:text-indigo-800">Read More</a> */}
+              </div>
+            </div>
+          ))}
         </div>
         <div className="flex-col justify-center m-auto">
           <img
               src={ashwagandhaImage}
               alt="Ashwagandha"
-              className="rounded-xl shadow-2xl w-full md:w-60 md:h-60 bg-green-200 bg-opacity-40"
+              className="rounded-xl shadow-2xl w-96 md:w-52 md:h-52 bg-green-200 bg-opacity-40 overflow-hidden hover:shadow-2xl transition-transform transform hover:scale-105"
             />
           <h4 className='text-green-800 text-center text-3xl md:text-2xl font-bold mt-4'>Ashwagandha</h4>
         </div>
+      </div>
+      <div>
+        <h3 className="p-4 font-messiri text-base md:text-xl text-green-800 font-normal mt-8 rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
       </div>
     </div>
   );

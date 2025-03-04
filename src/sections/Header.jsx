@@ -39,7 +39,7 @@ const Header = () => {
   
   return (
     // bg-[#347928] sticky top-0 z-30
-    <div className={`bg-green-800 flex justify-between item-center gap-4 lg:px-20 px-4 md:py-8 py-2 `}>
+    <div className={`bg-green-800 flex justify-between item-center gap-4 lg:px-20 px-4 md:py-9 py-2 `}>
       <div id='logo'>
         <img src={logo} alt='company-logo' className='bg-white border-2 border-green-800 p-1 rounded-md absolute top-0 md:h-[130px] h-[60px] w-auto' />
       </div>

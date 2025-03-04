@@ -9,7 +9,7 @@ import onkarLogo from '../assets/images/onkar.png'
 
 const Hero = () => {
   return (
-    <section className="relative lg:top-20 top-16 w-full md:h-[300px] flex items-center justify-center text-center text-white">
+    <section className="relative lg:top-20 top-16 w-full md:h-[250px] flex items-center justify-center text-center text-white">
       {/* Parallax Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-fixed bg-center"
@@ -21,7 +21,7 @@ const Hero = () => {
 
       {/* Left Side Image */}
       <motion.div
-        className="absolute left-4 md:left-28 top-12 transform -translate-y-1/4 bg-white bg-opacity-60 rounded-xl p-4 shadow-lg w-16 h-16 flex items-center justify-center md:w-28 md:h-28"
+        className="absolute left-4 md:left-28 top-2 transform -translate-y-1/4 bg-white bg-opacity-60 rounded-xl p-4 shadow-lg w-16 h-16 flex items-center justify-center md:w-28 md:h-28"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
@@ -31,7 +31,7 @@ const Hero = () => {
 
       {/* Right Side Image */}
       <motion.div
-        className="absolute right-4 md:right-28 top-12 transform -translate-y-1/4 bg-white bg-opacity-60 rounded-xl p-4 shadow-lg w-16 h-16 flex items-center justify-center md:w-28 md:h-28"
+        className="absolute right-4 md:right-28 top-2 transform -translate-y-1/4 bg-white bg-opacity-60 rounded-xl p-4 shadow-lg w-16 h-16 flex items-center justify-center md:w-28 md:h-28"
         initial={{ opacity: 0, x: 50 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
