@@ -6,10 +6,11 @@ import banner from '../assets/images/banner.jpg'
 import background from '../assets/images/background.jpg'
 import omLogo from '../assets/images/om.png'
 import onkarLogo from '../assets/images/onkar.png'
+import MessageQuote from '../components/MessageQuote'
 
 const Hero = () => {
   return (
-    <section className="relative lg:top-20 top-16 w-full md:h-[250px] flex items-center justify-center text-center text-white">
+    <section className="relative md:top-16 top-16 w-full md:h-[250px] flex items-center justify-center text-center text-white">
       {/* Parallax Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-fixed bg-center"
@@ -41,7 +42,8 @@ const Hero = () => {
 
 
       {/* Foreground Content */}
-      <motion.div
+      <MessageQuote />
+      {/* <motion.div
         className="relative z-10 max-w-72 md:max-w-2xl p-6"
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -56,15 +58,7 @@ const Hero = () => {
           Sometimes not getting what you want is a wonderful stroke of luck! God has greater plans for you!
         </h3>
 
-        {/* Call to Action Button */}
-        {/* <motion.button
-          className="mt-6 px-6 py-3 bg-orange-500 text-white text-lg font-semibold rounded-full shadow-lg hover:bg-orange-600 transition duration-300"
-          whileHover={{ scale: 1.1 }}
-        >
-          Learn More
-        </motion.button> */}
-        
-      </motion.div>
+      </motion.div> */}
       
     </section>
   )

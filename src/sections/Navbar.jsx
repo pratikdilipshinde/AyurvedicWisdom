@@ -1,15 +1,16 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link, useLocation } from "react-router-dom"; // Import from react-router-dom
 import { FaXmark, FaBars, FaChevronDown } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
+  const location = useLocation(); // Get the current route
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50); // Navbar becomes sticky after scrolling 50px
+      setIsScrolled(window.scrollY > 50);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,100 +33,95 @@ const Navbar = () => {
   };
 
   const navItems = [
-    {
-      link: "Home",
-      path: "/",
-      submenu: [],
-      // submenu: [{ link: "Contact Us", path: "/" }],
-    },
+    { link: "Home", path: "/" },
     {
       link: "Wellness",
-      path: "/",
+      path: "/wellness",
       submenu: [
-        { link: "Health", path: "/" },
-        { link: "Healing", path: "/" },
-        { link: "Home Remedies", path: "/" },
-        { link: "Acupressure", path: "/" },
-        { link: "Beauty Tips", path: "/" },
+        { link: "Health", path: "/wellness/health" },
+        { link: "Healing", path: "/wellness/healing" },
+        { link: "Home Remedies", path: "/wellness/home-remedies" },
+        { link: "Acupressure", path: "/wellness/acupressure" },
+        { link: "Beauty Tips", path: "/wellness/beauty-tips" },
       ],
     },
     {
       link: "Food & Nutrition",
-      path: "/",
+      path: "/food-nutrition",
       submenu: [
-        { link: "Vegetarianism", path: "/" },
-        { link: "Recipes", path: "/" },
+        { link: "Vegetarianism", path: "/food-nutrition/vegetarianism" },
+        { link: "Recipes", path: "/food-nutrition/recipes" },
       ],
     },
     {
       link: "Mind & Spirituality",
-      path: "/",
+      path: "/mind-spirituality",
       submenu: [
-        { link: "Meditation", path: "/" },
-        { link: "Prayers", path: "/" },
-        { link: "Breathing", path: "/" },
-        { link: "Yoga", path: "/" },
-        { link: "Peace", path: "/" },
-        { link: "Powerful Thoughts", path: "/" },
+        { link: "Meditation", path: "/mind-spirituality/meditation" },
+        { link: "Prayers", path: "/mind-spirituality/prayers" },
+        { link: "Breathing", path: "/mind-spirituality/breathing" },
+        { link: "Yoga", path: "/mind-spirituality/yoga" },
+        { link: "Peace", path: "/mind-spirituality/peace" },
+        { link: "Powerful Thoughts", path: "/mind-spirituality/powerful-thoughts" },
       ],
     },
     {
       link: "Life & Relationships",
-      path: "/",
+      path: "/life-relationships",
       submenu: [
-        { link: "Determination", path: "/" },
-        { link: "Life", path: "/" },
-        { link: "Love", path: "/" },
-        { link: "Happiness", path: "/" },
-        { link: "Innocence", path: "/" },
-        { link: "Laughter", path: "/" },
-        { link: "Friendship", path: "/" },
+        { link: "Determination", path: "/life-relationships/determination" },
+        { link: "Life", path: "/life-relationships/life" },
+        { link: "Love", path: "/life-relationships/love" },
+        { link: "Happiness", path: "/life-relationships/happiness" },
+        { link: "Innocence", path: "/life-relationships/innocence" },
+        { link: "Laughter", path: "/life-relationships/laughter" },
+        { link: "Friendship", path: "/life-relationships/friendship" },
       ],
     },
     {
       link: "Parenting & Family",
-      path: "/",
+      path: "/parenting-family",
       submenu: [
-        { link: "Newborns", path: "/" },
-        { link: "Moms/Dads", path: "/" },
+        { link: "Newborns", path: "/parenting-family/newborns" },
+        { link: "Moms/Dads", path: "/parenting-family/moms-dads" },
       ],
     },
-    {
-      link: "About Mini",
-      path: "/",
-      submenu: [],
-    },
+    { link: "About Mini", path: "/about-mini" },
   ];
 
   return (
     <nav
-      className={` w-full transition-all duration-200 ${
+      className={`w-full transition-all duration-200 ${
         isScrolled
-          ? "absolute lg:top-28 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-6 py-4"
-          // ? "fixed top-0 left-0 bg-white shadow-md py-7"
-          : "absolute lg:top-28 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-6 py-4"
-      } z-40 flex justify-between items-center px-6 lg:px-20`}
+          ? "absolute md:top-32 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-4 py-4"
+          : "absolute md:top-32 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-4 py-4"
+      } z-40 flex justify-between items-center px-6 md:px-8`}
     >
-      {/* Desktop Navigation (Hover Effect for Large Screens) */}
+      {/* Desktop Navigation */}
       <ul className="lg:flex justify-center items-center gap-6 hidden">
         {navItems.map(({ link, path, submenu }) => (
           <li key={path} className="relative group">
-            <button className="text-green-800 text-[16px] uppercase font-semibold cursor-pointer px-3 py-2 dark:text-white rounded-full hover:bg-orange-500 hover:text-white flex items-center gap-1">
+            <Link
+              to={path}
+              className={`text-center text-green-800 text-[16px] uppercase font-semibold cursor-pointer px-3 py-2 dark:text-white rounded-full hover:bg-orange-500 hover:text-white flex items-center gap-1 ${
+                location.pathname === path ? "bg-orange-500 text-white" : ""
+              }`}
+              onClick={closeMenu}
+            >
               {link}
-              {submenu.length > 0 && <FaChevronDown className="text-sm" />}
-            </button>
+              {submenu?.length > 0 && <FaChevronDown className="text-sm" />}
+            </Link>
 
-            {/* Dropdown Menu (Visible only on Hover of Main Menu) */}
-            {submenu.length > 0 && (
+            {/* Dropdown Menu */}
+            {submenu?.length > 0 && (
               <ul className="absolute left-0 w-48 bg-white shadow-lg rounded-md p-2 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-400">
                 {submenu.map(({ link, path }) => (
                   <li key={path} className="text-[#347928]">
                     <Link
-                      className="block px-4 py-2 text-sm uppercase font-semibold cursor-pointer rounded-lg hover:bg-orange-500 hover:text-white"
                       to={path}
-                      spy={true}
-                      offset={-100}
-                      smooth={true}
+                      className={`block px-4 py-2 text-sm uppercase font-semibold cursor-pointer rounded-lg hover:bg-orange-500 hover:text-white ${
+                        location.pathname === path ? "bg-orange-500 text-white" : ""
+                      }`}
                       onClick={closeMenu}
                     >
                       {link}
@@ -138,15 +134,13 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* Mobile Menu Toggle Button */}
+      {/* Mobile Menu Button */}
       <div className="flex justify-center items-center lg:hidden" onClick={toggleMenu}>
-        <div>
-          {isMenuOpen ? (
-            <FaXmark className="text-black dark:text-white text-2xl cursor-pointer sm:top-[10px] top-[30px]" />
-          ) : (
-            <FaBars className="text-black dark:text-white text-2xl cursor-pointer sm:top-[10px] top-[30px]" />
-          )}
-        </div>
+        {isMenuOpen ? (
+          <FaXmark className="text-black dark:text-white text-2xl cursor-pointer" />
+        ) : (
+          <FaBars className="text-black dark:text-white text-2xl cursor-pointer" />
+        )}
       </div>
 
       {/* Mobile Navigation Menu */}
@@ -155,25 +149,25 @@ const Navbar = () => {
           <ul className="flex flex-col justify-center items-center gap-2 w-full">
             {navItems.map(({ link, path, submenu }) => (
               <li key={path} className="w-full text-center">
-                <button
-                  className="w-full text-[#f3f3f3] uppercase font-semibold cursor-pointer p-3 rounded-lg hover:bg-red-600 hover:text-black flex justify-between items-center"
-                  onClick={() => toggleDropdown(link)}
+                <Link
+                  to={path}
+                  className={`w-full text-[#f3f3f3] uppercase font-semibold cursor-pointer p-3 rounded-lg hover:bg-red-600 hover:text-black flex justify-between items-center ${
+                    location.pathname === path ? "bg-orange-500 text-black" : ""
+                  }`}
+                  onClick={closeMenu}
                 >
                   {link}
-                  {submenu.length > 0 && <FaChevronDown className="text-sm ml-2" />}
-                </button>
+                  {submenu?.length > 0 && <FaChevronDown className="text-sm ml-2" />}
+                </Link>
 
                 {/* Mobile Dropdown Menu */}
-                {submenu.length > 0 && openDropdown === link && (
+                {submenu?.length > 0 && openDropdown === link && (
                   <ul className="mt-1 bg-gray-700 rounded-md p-2">
                     {submenu.map(({ link, path }) => (
                       <li key={path}>
                         <Link
-                          className="block text-[#f3f3f3] uppercase font-semibold cursor-pointer p-2 text-center rounded-lg hover:bg-orange-500 hover:text-black"
                           to={path}
-                          spy={true}
-                          offset={-100}
-                          smooth={true}
+                          className="block text-[#f3f3f3] uppercase font-semibold cursor-pointer p-2 text-center rounded-lg hover:bg-orange-500 hover:text-black"
                           onClick={closeMenu}
                         >
                           {link}
