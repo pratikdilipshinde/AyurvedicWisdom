@@ -93,12 +93,12 @@ const Navbar = () => {
     <nav
       className={`w-full transition-all duration-200 ${
         isScrolled
-          ? "absolute md:top-32 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-4 py-4"
-          : "absolute md:top-32 sm:top-12 top-16 md:left-0 right-0 bg-transparent md:py-4 py-4"
+          ? "absolute md:top-32 sm:top-12 top-16 bg-transparent md:my-auto py-4"
+          : "absolute md:top-32 sm:top-12 top-16 bg-transparent md:my-auto py-4"
       } z-40 flex justify-between items-center px-6 md:px-8`}
     >
       {/* Desktop Navigation */}
-      <ul className="lg:flex justify-center items-center gap-6 hidden">
+      <ul className="md:contents justify-center items-center gap-6 hidden">
         {navItems.map(({ link, path, submenu }) => (
           <li key={path} className="relative group">
             <Link
