@@ -12,6 +12,7 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
 import Health from './pages/Wellness/Health'
 import Healing from './pages/Wellness/Healing'
+import BackToTop from './components/BackToTop'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
         </Routes>
       </main>
       {/* <Contact /> */}
+      <BackToTop />
       <Footer />
     </>
   )
