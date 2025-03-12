@@ -1,6 +1,4 @@
 import React from 'react';
-import introimg1 from '../assets/images/intro-img1.jpg';
-import introimg2 from '../assets/images/intro-img2.jpg';
 import introbg from '../assets/images/intro-bg.jpg';
 import basilimg from '../assets/images/basil.webp';
 import basilplantimg from '../assets/images/basilplant.webp';
