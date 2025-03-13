@@ -133,33 +133,33 @@ const Health = () => {
               In Your 20s:
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Drink Water</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               The AHA recommends that women consume no more than 100 calories (6 teaspoons) of added sugar per day, and men no more than 150 calories (9 teaspoons). A single 12-ounce soft drink contains 130 calories, or about 8 teaspoons. Studies show that people who get a lot of their calories from added sugars often don't consume enough fiber, calcium, iron, zinc and vitamin A in their diets. What's more, drinking your 'discretionary calories' is less satisfying than eating them, so you're more likely to overeat, which may put you on the path to being overweight, having high blood pressure and being at higher risk for diabetes -- all dangers to your heart. If plain water is just too, well, plain, squirt a lemon or lime in it, drink seltzer or brew up some unsweetened iced tea.
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Find a Better Stress Reliever</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               People who smoke in their 20s and continue for the rest of their lives die on average 12 to 14 years younger than nonsmokers, it's easier to quit smoking in your 20s than it is later in life, because the habit is less ingrained. Any form of exercise is a better stress reducer than smoking, but people in their 20s might want to take advantage of their natural flexibility and try yoga or Pilates.
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Learn Your Family History</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               Talk to your parents and other relatives to find out what medical conditions run in your family. Although most people in their 20s aren't at imminent risk of heart attack or stroke. If your father had a heart attack before age 55 or your mother had one before age 65, or even if a grandparent, uncle or aunt had a heart attack or stroke at these young ages, you may be at increased risk and need to be doing everything possible now to protect your heart. You should also have your blood pressure checked every two years starting at age 18.
             </h4>
             <h4 className='font-bold text-lg text-center pt-4'>
               In Your 30s:
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Set Exercise Goals</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               These are prime weight-gaining years. The 30s are when many women start taking care of everyone but themselves, but these are important years to keep weight under control, and it's easier to lose weight in your 30s than when your metabolism starts slowing down in your 40s. Set exercise goals to help you lose your excess weight. Set a goal to walk every day. In other words, move more in any way you can. Same applies to the men.
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Do Something You Love Every Day</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               "Whatever activity makes you feel really good inside, make sure you do it for at least 15 or 20 minutes every day," says Dr. Wood. "For some people it might be meditation, for others it's running, and for others it may be reading. Whatever relaxes and restores you, carve out time each day to do it and it could become a habit for life."
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Know Your Numbers</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               Become familiar with your "three Bs": your body mass index, blood pressure and blood cholesterol. If any of your numbers are not in the target ranges for heart health, talk to your doctor about changes you can make to improve them. Here are the numbers you should aim for, according to the AHA:
             </h4>
-            <ol className='list-decimal pl-8'>
+            <ol className='list-decimal pl-8 text-justify'>
               <li>Blood pressure: Less than 130/80 mm Hg</li>
               <li>Blood cholesterol: LDL (low-density lipoproteins, or "lousy cholesterol") below 100 mg/dL; HDL (high-density lipoprotein, or "healthy cholesterol") above 40 mg/dL for men and above 50 mg/dL for women;</li>
               <li>Triglycerides: Below 150 mg/dL.</li>
@@ -169,48 +169,48 @@ const Health = () => {
               In Your 40s:
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Weight Train</h4>
-            <h4>
+            <h4 className='text-justify'>
               <b>For women</b>, the 40s are when your body starts losing a lot of its lean muscle tissue and metabolism slows, making you more likely to gain weight. The AHA recommends women weight train at least two times a week, which can keep your metabolism up, strengthen your bones and help you look and feel great as you start heading toward menopause.
             </h4>
-            <h4>
+            <h4 className='text-justify'>
               <b>For Men</b> - visit the gym at least 3 times a week, strengthen your bones with weight training and Cardio exercises.
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Nurture Your Relationships</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               Realize how important relationships are in helping you get through difficult times and in helping encourage you to make healthy choices in your life. Now is the time to create and nurture that network of support around you. Research shows that people who are isolated in their 50s and 60s have more health problems than those who are surrounded by people who care about them. Spend time with people you love and care about, whether it's your spouse, children, siblings, friends, fellow church members or other loved ones.
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Add Another Number</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               Having your blood glucose (sugar) level checked every three years beginning at age 45 to help monitor your risks for diabetes and heart disease. The recommended level on a fasting blood glucose test is less than 100 mg/dL. If yours is higher, talk to your doctor about ways to lower your risk for diabetes.
             </h4>
             <h4 className='font-bold text-lg text-center pt-4'>
               In Your 50s:
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Rethink when you Eat</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               The often-repeated advice to eat breakfast like a king, lunch like a prince and dinner like a pauper is especially true as you age into your 50s and beyond. Most people need to eat fewer calories overall when they hit their 50s, and it's best to eat most of your calories earlier in the day and not be locked into the idea that you need three big meals a day. You need calories early in the day to rev up your metabolism and give you energy for the things you need to do, and it's fine to have a good-sized meal at lunchtime, but eating a lot in the evening may interfere with your sleep as your body works to digest the food. Most people in their 50s don't need a lot of calories for the activities they do at night. Those extra calories that aren't burned off just contribute to weight gain.
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Get Screened</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               The National Osteoporosis Foundation recommends a bone mineral density test after age 50 if you have risk factors such as being menopausal or having a family history of osteoporosis. Although not directly related to your heart, conditions that predispose to osteoporosis also predispose to heart disease -- namely, inactivity and poor diet. A bone mineral density test may pick up thinning bone problems that could predispose you to falls. If you fall, you may not be able to exercise for a while, which could set you up for weight gain and health problems. Strong bones help you have a strong heart.
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Volunteer</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               In your 20s and 30s, there tends to be a lot to be excited about: love, marriage, babies being born, careers taking off. By the time you reach your 50s, those big life events may be in your past, and you may instead be facing an empty nest, parents who are dying or already gone and the denouement of your career. Volunteering is a great way to bring more positives into your life. Whether it's by starting a new group related to a cause you care about or helping out someone in your community, having something that you're committed to can have a very positive impact on your life.
             </h4>
             <h4 className='font-bold text-lg text-center pt-4'>
               60s and Over:
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Adjust Your Exercise to Accommodate Your Body</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               It's important to maintain the momentum that you built up in your 30s, 40s and 50s. If you continue to be active into your senior years, your heart will look and act younger. In their 60s, some people start experiencing issues like arthritis and back pain, and you may have to switch from running to walking or from tennis to water aerobics. Find what works for you and keep doing it. Continue strength training twice a week, too. It will help you to maintain your lean body mass.
             </h4>
             <h4 className='font-semibold text-lg pt-4'>From intensive exercise take up Tai Chi</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               Studies show that tai chi not only helps you de-stress, it helps to prevent balance problems that can lead to falls in your later years. It also helps reduce pain if you have any chronic conditions, and improves sleep, all of which are good for your heart.
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Get Talking</h4>
-            <h4 className='text-indent-8'>
+            <h4 className='text-indent-8 text-justify'>
               Call your doctor at the first sign of any unusual symptom, even if you don't think it's serious. In terms of heart disease, symptoms including chest pressure, tightness in your jaw, profound fatigue and shortness of breath with activity all may indicate heart problems. Your doctor may recommend more detailed screening to assess your risks, and, if necessary, treatment to help you live a longer, healthier life.
             </h4>
             <h4 className='font-bold text-lg text-center'>20 - 30 - 40 - 50 - or 60 live life to the fullest. Be happy and healthy</h4>
