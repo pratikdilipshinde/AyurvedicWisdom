@@ -13,6 +13,7 @@ import Home from './pages/Home'
 import Health from './pages/Wellness/Health'
 import Healing from './pages/Wellness/Healing'
 import BackToTop from './components/BackToTop'
+import BeautyTips from './pages/Wellness/BeautyTips'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/wellness/health' element={<Health />} />
           <Route path='/wellness/healing' element={<Healing />} />
+          <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
         </Routes>
       </main>
       {/* <Contact /> */}
