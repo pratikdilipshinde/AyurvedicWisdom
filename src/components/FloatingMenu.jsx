@@ -22,7 +22,7 @@ import { Link } from "react-scroll";
 
 const FloatingMenu = ({ menuItems, activeSection }) => {
   return (
-    <div className="sticky top-32 left-0 w-full bg-green-800 text-white shadow-lg rounded-lg p-4 border border-gray-200">
+    <div className="sticky top-32 left-0 w-full bg-green-800 text-white shadow-2xl rounded-lg p-4 border border-gray-200">
       <h3 className="text-lg font-bold mb-2 text-center">Content</h3>
       <ul className="space-y-2">
         {menuItems.map((item, index) => (

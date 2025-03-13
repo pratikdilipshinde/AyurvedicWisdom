@@ -14,6 +14,7 @@ import Health from './pages/Wellness/Health'
 import Healing from './pages/Wellness/Healing'
 import BackToTop from './components/BackToTop'
 import BeautyTips from './pages/Wellness/BeautyTips'
+import Determination from './pages/LifeRelationships/Determination'
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path='/wellness/health' element={<Health />} />
           <Route path='/wellness/healing' element={<Healing />} />
           <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
+          <Route path='/life-relationships/determination' element={<Determination />} />
         </Routes>
       </main>
       {/* <Contact /> */}
