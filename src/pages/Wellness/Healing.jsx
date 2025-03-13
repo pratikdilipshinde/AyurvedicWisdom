@@ -168,7 +168,7 @@ const Healing = () => {
               The use of MCTs to treat neurological disorders has been around for a number of years, but little has been done to use this knowledge to development treatments for Alzheimer's and other neurological conditions. MCTs and coconut oil are natural products and as such, are not patentable, so drug manufacturers have little interest in researching their therapeutic potential.
             </h4>
           </Element>
-          <Element name="Coconut Oil and Alzheimer's Disease" id="Coconut Oil and Alzheimer's Disease" className="mt-4">
+          <Element name="Dengue Fever Remedy" id="Dengue Fever Remedy" className="mt-4">
             <h3 className="text-3xl font-bold py-2 text-center">Dengue Fever Remedy</h3>
             <h4 className=''>
               My friend's son was in the critical stage at the ICU when his blood platelet count drops to 15 after 15 liters of blood transfusion.
@@ -192,7 +192,7 @@ const Healing = () => {
               It's believed one's body would be overheated when one is down with dengue, papaya juice has a cooling effect. It helps to reduce the level of heat in one's body, thus the fever will go away.
             </h4>
           </Element>
-          <Element name="Coconut Oil and Alzheimer's Disease" id="Coconut Oil and Alzheimer's Disease" className="mt-4">
+          <Element name="Healthy Juices" id="Healthy Juices" className="mt-4">
             <h3 className="text-3xl font-bold py-2 text-center">Healthy Juices</h3>
             <ul className='list-disc pl-6'>
               <li><b>Carrot + Ginger + Apple:</b> Boost and cleanse the system</li>
