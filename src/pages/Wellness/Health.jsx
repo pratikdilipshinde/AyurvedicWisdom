@@ -47,11 +47,11 @@ const Health = () => {
 
         {/* Right Content Section */}
         <div className="w-4/5 h-fit overflow-y-auto p-4 border text-green-950">
-          <h1 className="text-3xl font-bold text-center">Health</h1>
+          <h1 className="text-5xl font-bold text-center">Health</h1>
 
           {/* Sections with Smooth Scrolling */}
-          <Element name="Importance of Breakfast" id="Importance of Breakfast" className="mt-4">
-            <h3 className="text-2xl font-semibold py-2 text-center">Importance of Breakfast</h3>
+          <Element name="Importance of Breakfast" id="Importance of Breakfast" className="mt-2">
+            <h3 className="text-2xl font-semibold py-2 text-center underline">Importance of Breakfast</h3>
             <h4 className="text-center text-lg font-semibold">
               <b>"Eat breakfast like a king, lunch like a prince, and dinner like a pauper,"</b> is an old saying that rings true to this day.
             </h4>
@@ -76,10 +76,11 @@ const Health = () => {
           </Element>
 
           <Element name="Gout" id="Gout" className="mt-4">
-            <h3 className="text-2xl font-semibold py-2 text-center">Gout</h3>
-            <h4 className="font-bold text-lg text-center">
+            <h3 className="text-3xl font-semibold py-2 text-center">Gout</h3>
+            <h4 className="font-bold text-xl text-center underline">
               OBESITY - HYPERTENSION - HEART PROBLEM - STROKE 
-              <br />
+            </h4>
+            <h4 className="font-bold text-lg text-center">
               (A Vicious food cycle and all the related diseases)
             </h4>
             <p className="text-green-950 text-justify text-indent-8">
@@ -99,8 +100,8 @@ const Health = () => {
           </Element>
 
           <Element name="Drinking Water" id="Drinking Water" className="mt-4">
-            <h3 className="text-2xl font-semibold py-2 text-center">Drinking Water</h3>
-            <h4 className="font-bold text-lg text-center">Are you drinking enough water daily?</h4>
+            <h3 className="text-3xl font-semibold py-2 text-center">Drinking Water</h3>
+            <h4 className="font-bold text-xl text-center underline">Are you drinking enough water daily?</h4>
             <p className='text-justify'>
               Lack of water is the #1 trigger of daytime fatigue
               <br />
@@ -121,13 +122,14 @@ const Health = () => {
           </Element>
 
           <Element name="Protect Your Heart" id="Protect Your Heart" className="mt-4">
-            <h3 className="text-2xl font-semibold py-2 text-center">Protect Your Heart</h3>
-            <h4 className='font-bold text-lg text-center'>
+            <h3 className="text-3xl font-semibold py-2 text-center">Protect Your Heart</h3>
+            <h4 className='font-bold text-xl text-center underline'>
               Age-by-Age Guide
               <br />
               Small Changes, Big Results
               <br />
-              <br />
+            </h4>
+            <h4 className='font-bold text-lg text-center mt-2'>
               In Your 20s:
             </h4>
             <h4 className='font-semibold text-lg pt-4'>Drink Water</h4>
@@ -214,7 +216,7 @@ const Health = () => {
             <h4 className='font-bold text-lg text-center'>20 - 30 - 40 - 50 - or 60 live life to the fullest. Be happy and healthy</h4>
           </Element>
           <Element name="How to Plan Your Meals" id="How to Plan Your Meals" className="mt-4">
-            <h3 className="text-2xl font-semibold py-2 text-center">How to Plan Your Meals</h3>
+            <h3 className="text-3xl font-semibold py-2 text-center">How to Plan Your Meals</h3>
             <p className='text-justify'>
               For protein (meats), use the size of your palm as a measurement.
               <br />
@@ -262,7 +264,7 @@ const Health = () => {
             <h4 className='font-bold text-lg text-right'>EXCERPT FROM TATHAASTU</h4>
           </Element>
           <Element name="Blood Sugar and Diabetes" id="Blood Sugar and Diabetes" className="mt-4">
-            <h3 className="text-2xl font-semibold py-2 text-center">Blood Sugar and Diabetes</h3>
+            <h3 className="text-3xl font-semibold py-2 text-center">Blood Sugar and Diabetes</h3>
             <p className='text-justify text-indent-8'>
               When you eat, your body breaks the food down into sugar and sends it to your blood stream. Then your Pancreas makes Insulin to help get the sugar into the cells for energy needed in your daily life.
             </p>
@@ -303,7 +305,7 @@ const Health = () => {
             <h4 className='font-bold text-lg text-center'>SO EARLY DETECTION IS A MUST</h4>
           </Element>
           <Element name="7 Don'ts After A Meal" id="7 Don'ts After A Meal" className="mt-4">
-            <h3 className="text-2xl font-semibold py-2 text-center">7 Don'ts After A Meal</h3>
+            <h3 className="text-3xl font-semibold py-2 text-center">7 Don'ts After A Meal</h3>
             <p className='text-justify'>
               <b>Don't smoke:</b> Experiment from experts proves that smoking a cigarette after meal is comparable to smoking 10 cigarettes (chance of cancer is higher).
             </p>

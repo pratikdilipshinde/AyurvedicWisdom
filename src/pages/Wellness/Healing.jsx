@@ -48,11 +48,11 @@ const Healing = () => {
 
         {/* Right Content Section */}
         <div className="w-4/5 h-fit overflow-y-auto p-4 border text-green-950">
-          <h1 className="text-3xl font-bold text-center">Health</h1>
+          <h1 className="text-5xl font-bold text-center">Healing</h1>
 
           <Element name="Turmeric" id="Turmeric" className="mt-4">
-            <h3 className="text-2xl font-bold py-2 text-center">Turmeric</h3>
-            <h3 className="text-xl font-semibold py-2 text-center">Super Spice Secrets</h3>
+            <h3 className="text-3xl font-bold py-2 text-center underline">Turmeric</h3>
+            <h3 className="text-xl font-semibold py-2 text-center underline">Super Spice Secrets</h3>
             <h4 className="font-semibold text-lg text-center">By Dr. Mercola</h4>
             
             <div className="grid md:grid-cols-3 gap-6 items-center">
@@ -133,7 +133,7 @@ const Healing = () => {
             </ul>
           </Element>
           <Element name="Coconut Oil and Alzheimer's Disease" id="Coconut Oil and Alzheimer's Disease" className="mt-4">
-            <h3 className="text-2xl font-bold py-2 text-center">Coconut Oil and Alzheimer's Disease</h3>
+            <h3 className="text-3xl font-bold py-2 text-center">Coconut Oil and Alzheimer's Disease</h3>
             <h4 className='text-indent-8'>
               The most effective treatment for Alzheimer's may be sitting on your cupboard shelf. Doctor discovers effectiveness of coconut oil in fighting neuro degeneration, Parkinson's disease, multiple sclerosis, autism, dementia, epilepsy,and various emotional disorders.
             </h4>
@@ -169,7 +169,7 @@ const Healing = () => {
             </h4>
           </Element>
           <Element name="Coconut Oil and Alzheimer's Disease" id="Coconut Oil and Alzheimer's Disease" className="mt-4">
-            <h3 className="text-2xl font-bold py-2 text-center">Dengue Fever Remedy</h3>
+            <h3 className="text-3xl font-bold py-2 text-center">Dengue Fever Remedy</h3>
             <h4 className=''>
               My friend's son was in the critical stage at the ICU when his blood platelet count drops to 15 after 15 liters of blood transfusion.
             </h4>
@@ -193,7 +193,7 @@ const Healing = () => {
             </h4>
           </Element>
           <Element name="Coconut Oil and Alzheimer's Disease" id="Coconut Oil and Alzheimer's Disease" className="mt-4">
-            <h3 className="text-2xl font-bold py-2 text-center">Healthy Juices</h3>
+            <h3 className="text-3xl font-bold py-2 text-center">Healthy Juices</h3>
             <ul className='list-disc pl-6'>
               <li><b>Carrot + Ginger + Apple:</b> Boost and cleanse the system</li>
               <li><b>Apple + Cucumber + Celery:</b> Prevents cancer, reduces cholesterol, eliminates stomach upset and headache</li>
@@ -210,10 +210,11 @@ const Healing = () => {
             </ul>
           </Element>
           <Element name="Gout" id="Gout" className="mt-4">
-            <h3 className="text-2xl font-semibold py-2 text-center">Gout</h3>
-            <h4 className="font-bold text-lg text-center">
+            <h3 className="text-3xl font-semibold py-2 text-center">Gout</h3>
+            <h4 className="font-bold text-lg text-center underline">
               OBESITY - HYPERTENSION - HEART PROBLEM - STROKE 
-              <br />
+            </h4>
+            <h4>
               (A Vicious food cycle and all the related diseases)
             </h4>
             <p className="text-green-950 text-justify text-indent-8">
