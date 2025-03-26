@@ -15,6 +15,13 @@ import Healing from './pages/Wellness/Healing'
 import BackToTop from './components/BackToTop'
 import BeautyTips from './pages/Wellness/BeautyTips'
 import Determination from './pages/LifeRelationships/Determination'
+import Life from './pages/LifeRelationships/Life'
+import Happiness from './pages/LifeRelationships/Happiness'
+import Innocence from './pages/LifeRelationships/Innocence'
+import Laughter from './pages/LifeRelationships/Laughter'
+import Friendship from './pages/LifeRelationships/Friendship'
+import Love from './pages/LifeRelationships/Love'
+import HomeRemedies from './pages/Wellness/HomeRemedies'
 
 const App = () => {
   return (
@@ -28,8 +35,15 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/wellness/health' element={<Health />} />
           <Route path='/wellness/healing' element={<Healing />} />
+          <Route path='/wellness/home-remedies' element={<HomeRemedies />} />
           <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
           <Route path='/life-relationships/determination' element={<Determination />} />
+          <Route path='/life-relationships/life' element={<Life />} />
+          <Route path='/life-relationships/love' element={<Love />} />
+          <Route path='/life-relationships/happiness' element={<Happiness />} />
+          <Route path='/life-relationships/innocence' element={<Innocence />} />
+          <Route path='/life-relationships/laughter' element={<Laughter />} />
+          <Route path='/life-relationships/friendship' element={<Friendship />} />
         </Routes>
       </main>
       {/* <Contact /> */}
