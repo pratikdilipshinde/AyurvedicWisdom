@@ -24,6 +24,7 @@ import Love from './pages/LifeRelationships/Love'
 import HomeRemedies from './pages/Wellness/HomeRemedies'
 import Acupressure from './pages/Wellness/Acupressure'
 import Vegetarianism from './pages/FoodNutrition/Vegetarianism'
+import Recipes from './pages/FoodNutrition/Recipes'
 
 const App = () => {
   return (
@@ -40,6 +41,8 @@ const App = () => {
           <Route path='/wellness/home-remedies' element={<HomeRemedies />} />
           <Route path='/wellness/acupressure' element={<Acupressure />} />
           <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
+          <Route path='/food-nutrition/vegetarianism' element={<Vegetarianism />} />
+          <Route path='/food-nutrition/recipes' element={<Recipes />} />
           <Route path='/life-relationships/determination' element={<Determination />} />
           <Route path='/life-relationships/life' element={<Life />} />
           <Route path='/life-relationships/love' element={<Love />} />
@@ -47,7 +50,7 @@ const App = () => {
           <Route path='/life-relationships/innocence' element={<Innocence />} />
           <Route path='/life-relationships/laughter' element={<Laughter />} />
           <Route path='/life-relationships/friendship' element={<Friendship />} />
-          <Route path='/food-nutrition/vegetarianism' element={<Vegetarianism />} />
+          
         </Routes>
       </main>
       {/* <Contact /> */}
