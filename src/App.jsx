@@ -22,6 +22,7 @@ import Laughter from './pages/LifeRelationships/Laughter'
 import Friendship from './pages/LifeRelationships/Friendship'
 import Love from './pages/LifeRelationships/Love'
 import HomeRemedies from './pages/Wellness/HomeRemedies'
+import Acupressure from './pages/Wellness/Acupressure'
 
 const App = () => {
   return (
@@ -36,6 +37,7 @@ const App = () => {
           <Route path='/wellness/health' element={<Health />} />
           <Route path='/wellness/healing' element={<Healing />} />
           <Route path='/wellness/home-remedies' element={<HomeRemedies />} />
+          <Route path='/wellness/acupressure' element={<Acupressure />} />
           <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
           <Route path='/life-relationships/determination' element={<Determination />} />
           <Route path='/life-relationships/life' element={<Life />} />
