@@ -1,5 +1,6 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { SiX } from "react-icons/si"; // Twitter (X) icon
 
 const Footer = () => {
   return (
@@ -22,7 +23,7 @@ const Footer = () => {
               <FaFacebookF className="w-5 h-5" />
             </a>
             <a href="#" className="bg-green-600 p-3 rounded-full hover:bg-blue-500 transition">
-              <FaTwitter className="w-5 h-5" />
+              <SiX className="w-5 h-5" />
             </a>
             <a href="#" className="bg-green-600 p-3 rounded-full hover:bg-pink-500 transition">
               <FaInstagram className="w-5 h-5" />
