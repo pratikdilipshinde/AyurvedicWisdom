@@ -25,6 +25,9 @@ import HomeRemedies from './pages/Wellness/HomeRemedies'
 import Acupressure from './pages/Wellness/Acupressure'
 import Vegetarianism from './pages/FoodNutrition/Vegetarianism'
 import Recipes from './pages/FoodNutrition/Recipes'
+import Peace from './pages/MindSpirituality/Peace'
+import PowerfulThoughts from './pages/MindSpirituality/PowerfulThoughts'
+import Breathing from './pages/MindSpirituality/Breathing'
 
 const App = () => {
   return (
@@ -43,6 +46,9 @@ const App = () => {
           <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
           <Route path='/food-nutrition/vegetarianism' element={<Vegetarianism />} />
           <Route path='/food-nutrition/recipes' element={<Recipes />} />
+          <Route path='/mind-spirituality/peace' element={<Peace />} />
+          <Route path='/mind-spirituality/powerful-thoughts' element={<PowerfulThoughts />} />
+          <Route path='/mind-spirituality/breathing' element={<Breathing />} />
           <Route path='/life-relationships/determination' element={<Determination />} />
           <Route path='/life-relationships/life' element={<Life />} />
           <Route path='/life-relationships/love' element={<Love />} />
