@@ -28,6 +28,9 @@ import Recipes from './pages/FoodNutrition/Recipes'
 import Peace from './pages/MindSpirituality/Peace'
 import PowerfulThoughts from './pages/MindSpirituality/PowerfulThoughts'
 import Breathing from './pages/MindSpirituality/Breathing'
+import AboutMini from './pages/AboutMini'
+import Meditation from './pages/MindSpirituality/Meditation'
+import Prayers from './pages/MindSpirituality/Prayers'
 
 const App = () => {
   return (
@@ -39,6 +42,7 @@ const App = () => {
       <main className='main-content'>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/about-mini' element={<AboutMini />} />
           <Route path='/wellness/health' element={<Health />} />
           <Route path='/wellness/healing' element={<Healing />} />
           <Route path='/wellness/home-remedies' element={<HomeRemedies />} />
@@ -46,6 +50,8 @@ const App = () => {
           <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
           <Route path='/food-nutrition/vegetarianism' element={<Vegetarianism />} />
           <Route path='/food-nutrition/recipes' element={<Recipes />} />
+          <Route path='/mind-spirituality/meditation' element={<Meditation />} />
+          <Route path='/mind-spirituality/prayers' element={<Prayers />} />
           <Route path='/mind-spirituality/peace' element={<Peace />} />
           <Route path='/mind-spirituality/powerful-thoughts' element={<PowerfulThoughts />} />
           <Route path='/mind-spirituality/breathing' element={<Breathing />} />
