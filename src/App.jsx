@@ -31,6 +31,7 @@ import Breathing from './pages/MindSpirituality/Breathing'
 import AboutMini from './pages/AboutMini'
 import Meditation from './pages/MindSpirituality/Meditation'
 import Prayers from './pages/MindSpirituality/Prayers'
+import Yoga from './pages/MindSpirituality/Yoga'
 
 const App = () => {
   return (
@@ -52,6 +53,7 @@ const App = () => {
           <Route path='/food-nutrition/recipes' element={<Recipes />} />
           <Route path='/mind-spirituality/meditation' element={<Meditation />} />
           <Route path='/mind-spirituality/prayers' element={<Prayers />} />
+          <Route path='/mind-spirituality/yoga' element={<Yoga />} />
           <Route path='/mind-spirituality/peace' element={<Peace />} />
           <Route path='/mind-spirituality/powerful-thoughts' element={<PowerfulThoughts />} />
           <Route path='/mind-spirituality/breathing' element={<Breathing />} />
