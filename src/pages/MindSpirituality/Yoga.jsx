@@ -590,7 +590,7 @@ const Yoga = () => {
                             <div className="grid-col-1 justify-center m-auto">
                             <img
                                 src={chakrasanaImg}
-                                alt="Chakrasana"
+                                alt="Chakrasana Image"
                                 className="rounded-xl shadow-2xl w-full md:w-fit md:h-64"
                             />
                             {/* <h4 className='text-green-800 text-center text-2xl font-bold'>Neem Leaf </h4> */}
@@ -642,7 +642,7 @@ const Yoga = () => {
                             <div className="grid-col-1 justify-center m-auto">
                             <img
                                 src={ardhamatsyendrasanaImg}
-                                alt="Ardha Matsyendrasana"
+                                alt="Ardha Matsyendrasana Image"
                                 className="rounded-xl shadow-2xl w-full md:w-fit md:h-64"
                             />
                             {/* <h4 className='text-green-800 text-center text-2xl font-bold'>Neem Leaf </h4> */}
