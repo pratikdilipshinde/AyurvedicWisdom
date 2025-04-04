@@ -8,7 +8,7 @@ import dadi from '../../assets/images/dadi.jpg';
 const Newborns = () => {
   return (
     <div className='bg-[#c5e2b2]'>
-        <div className="font-messiri mx-10 p-6 text-green-950">
+        <div className="font-messiri mx-4 md:mx-16 p-6 text-green-950">
             <h1 className="text-4xl font-bold text-center my-4">Newborn babies and Moms & Dads</h1>
             <h4 className='font-semibold text-lg text-center'>Do it the Herbal Way</h4>
             <div className="md:col-span-1 justify-center mx-auto">
