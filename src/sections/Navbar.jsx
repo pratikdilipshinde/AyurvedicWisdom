@@ -78,14 +78,7 @@ const Navbar = () => {
         { link: "Friendship", path: "/life-relationships/friendship" },
       ],
     },
-    {
-      link: "Parenting & Family",
-      path: "/parenting-family",
-      submenu: [
-        { link: "Newborns", path: "/parenting-family/newborns" },
-        { link: "Moms/Dads", path: "/parenting-family/moms-dads" },
-      ],
-    },
+    { link: "Newborn & Parent", path: "/newborn-parent" },
     { link: "About Mini", path: "/about-mini" },
   ];
 

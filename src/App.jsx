@@ -32,6 +32,7 @@ import AboutMini from './pages/AboutMini'
 import Meditation from './pages/MindSpirituality/Meditation'
 import Prayers from './pages/MindSpirituality/Prayers'
 import Yoga from './pages/MindSpirituality/Yoga'
+import NewbornParent from './pages/ParentingFamily/NewbornParent'
 
 const App = () => {
   return (
@@ -44,6 +45,7 @@ const App = () => {
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/about-mini' element={<AboutMini />} />
+          <Route path='/newborn-parent' element={<NewbornParent />} />
           <Route path='/wellness/health' element={<Health />} />
           <Route path='/wellness/healing' element={<Healing />} />
           <Route path='/wellness/home-remedies' element={<HomeRemedies />} />
