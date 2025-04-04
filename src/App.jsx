@@ -34,6 +34,7 @@ import Prayers from './pages/MindSpirituality/Prayers'
 import Yoga from './pages/MindSpirituality/Yoga'
 import NewbornParent from './pages/ParentingFamily/NewbornParent'
 import Wellness, { FoodNutrition, LifeRelationships, MindSpirituality } from './pages/NavMenuMain'
+import NotFound from './pages/NotFound'
 
 const App = () => {
   return (
@@ -75,6 +76,8 @@ const App = () => {
           <Route path='/life-relationships/innocence' element={<Innocence />} />
           <Route path='/life-relationships/laughter' element={<Laughter />} />
           <Route path='/life-relationships/friendship' element={<Friendship />} />
+
+          <Route path="*" element={<NotFound />} />
           
         </Routes>
       </main>
