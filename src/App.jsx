@@ -33,6 +33,7 @@ import Meditation from './pages/MindSpirituality/Meditation'
 import Prayers from './pages/MindSpirituality/Prayers'
 import Yoga from './pages/MindSpirituality/Yoga'
 import NewbornParent from './pages/ParentingFamily/NewbornParent'
+import Wellness, { FoodNutrition, LifeRelationships, MindSpirituality } from './pages/NavMenuMain'
 
 const App = () => {
   return (
@@ -46,19 +47,27 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/about-mini' element={<AboutMini />} />
           <Route path='/newborn-parent' element={<NewbornParent />} />
+
+          <Route path='/wellness' element={<Wellness />} />
           <Route path='/wellness/health' element={<Health />} />
           <Route path='/wellness/healing' element={<Healing />} />
           <Route path='/wellness/home-remedies' element={<HomeRemedies />} />
           <Route path='/wellness/acupressure' element={<Acupressure />} />
           <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
+
+          <Route path='/food-nutrition' element={<FoodNutrition />} />
           <Route path='/food-nutrition/vegetarianism' element={<Vegetarianism />} />
           <Route path='/food-nutrition/recipes' element={<Recipes />} />
+
+          <Route path='/mind-spirituality' element={<MindSpirituality />} />
           <Route path='/mind-spirituality/meditation' element={<Meditation />} />
           <Route path='/mind-spirituality/prayers' element={<Prayers />} />
           <Route path='/mind-spirituality/yoga' element={<Yoga />} />
           <Route path='/mind-spirituality/peace' element={<Peace />} />
           <Route path='/mind-spirituality/powerful-thoughts' element={<PowerfulThoughts />} />
           <Route path='/mind-spirituality/breathing' element={<Breathing />} />
+
+          <Route path='/life-relationships' element={<LifeRelationships />} />
           <Route path='/life-relationships/determination' element={<Determination />} />
           <Route path='/life-relationships/life' element={<Life />} />
           <Route path='/life-relationships/love' element={<Love />} />

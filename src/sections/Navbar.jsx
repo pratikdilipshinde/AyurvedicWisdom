@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom"; // Import from react-router-dom
+import { Link, useLocation } from "react-router-dom";
 import { FaXmark, FaBars, FaChevronDown } from "react-icons/fa6";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState(null);
   const [isScrolled, setIsScrolled] = useState(false);
-  const location = useLocation(); // Get the current route
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -82,6 +82,14 @@ const Navbar = () => {
     { link: "About Mini", path: "/about-mini" },
   ];
 
+  const isParentActive = (path, submenu) => {
+    if (location.pathname === path) return true;
+    if (submenu) {
+      return submenu.some((item) => location.pathname === item.path);
+    }
+    return false;
+  };
+
   return (
     <nav
       className={`w-full transition-all duration-200 ${
@@ -97,7 +105,7 @@ const Navbar = () => {
             <Link
               to={path}
               className={`text-center text-green-800 text-[16px] uppercase font-semibold cursor-pointer px-3 py-2 dark:text-white rounded-full hover:bg-orange-500 hover:text-white flex items-center gap-1 ${
-                location.pathname === path ? "bg-orange-500 text-white" : ""
+                isParentActive(path, submenu) ? "bg-orange-500 text-white" : ""
               }`}
               onClick={closeMenu}
             >
@@ -145,7 +153,7 @@ const Navbar = () => {
                 <Link
                   to={path}
                   className={`w-full text-[#f3f3f3] uppercase font-semibold cursor-pointer p-3 rounded-lg hover:bg-red-600 hover:text-black flex justify-between items-center ${
-                    location.pathname === path ? "bg-orange-500 text-black" : ""
+                    isParentActive(path, submenu) ? "bg-orange-500 text-black" : ""
                   }`}
                   onClick={closeMenu}
                 >
