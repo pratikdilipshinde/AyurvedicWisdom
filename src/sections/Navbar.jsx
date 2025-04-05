@@ -14,9 +14,7 @@ const Navbar = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
@@ -113,7 +111,6 @@ const Navbar = () => {
               {submenu?.length > 0 && <FaChevronDown className="text-sm" />}
             </Link>
 
-            {/* Dropdown Menu */}
             {submenu?.length > 0 && (
               <ul className="absolute left-0 w-48 bg-white shadow-lg rounded-md p-2 opacity-0 invisible group-hover:visible group-hover:opacity-100 transition-opacity duration-400">
                 {submenu.map(({ link, path }) => (
@@ -146,22 +143,32 @@ const Navbar = () => {
 
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
-        <div className="w-full h-fit bg-slate-800 p-4 absolute top-[50px] left-0">
+        <div className="w-full h-fit bg-slate-800 p-4 absolute top-[50px] left-0 z-50">
           <ul className="flex flex-col justify-center items-center gap-2 w-full">
             {navItems.map(({ link, path, submenu }) => (
               <li key={path} className="w-full text-center">
-                <Link
-                  to={path}
+                <div
                   className={`w-full text-[#f3f3f3] uppercase font-semibold cursor-pointer p-3 rounded-lg hover:bg-red-600 hover:text-black flex justify-between items-center ${
                     isParentActive(path, submenu) ? "bg-orange-500 text-black" : ""
                   }`}
-                  onClick={closeMenu}
+                  onClick={() => {
+                    if (submenu?.length > 0) {
+                      toggleDropdown(link);
+                    } else {
+                      closeMenu();
+                    }
+                  }}
                 >
-                  {link}
-                  {submenu?.length > 0 && <FaChevronDown className="text-sm ml-2" />}
-                </Link>
+                  <Link to={path}>{link}</Link>
+                  {submenu?.length > 0 && (
+                    <FaChevronDown
+                      className={`text-sm ml-2 transition-transform duration-200 ${
+                        openDropdown === link ? "rotate-180" : ""
+                      }`}
+                    />
+                  )}
+                </div>
 
-                {/* Mobile Dropdown Menu */}
                 {submenu?.length > 0 && openDropdown === link && (
                   <ul className="mt-1 bg-gray-700 rounded-md p-2">
                     {submenu.map(({ link, path }) => (

@@ -130,14 +130,14 @@ const Recipes = () => {
 
     return (
         <div className='bg-[#c5e2b2]'>
-            <div className="font-messiri max-w-full mx-12 shadow-md rounded-lg p-6 flex gap-6">
+            <div className="font-messiri max-w-full mx-4 md:mx-12 shadow-md rounded-lg p-4 md:p-6 flex flex-col lg:flex-row gap-6">
                 {/* Left Floating Menu */}
-                <div className="w-1/5">
+                <div className="lg:w-1/5 w-full">
                 <FloatingMenu menuItems={menuItems} activeSection={activeSection} />
                 </div>
 
                 {/* Right Content Section */}
-                <div className="w-4/5 h- overflow-y-auto p-4 border text-green-950">
+                <div className="lg:w-4/5 w-full h-fit overflow-y-auto p-2 md:p-4 border text-green-950">
                     <h1 className="text-5xl font-bold text-center">Recipes</h1>
                     <Element name="Indian Spices" id="Indian Spices" className="mt-4">
                         <h3 className="text-3xl font-semibold py-2 text-center">Indian Spices</h3>

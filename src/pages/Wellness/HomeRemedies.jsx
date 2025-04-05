@@ -17,61 +17,88 @@ import onionsImg from '../../assets/images/onions.jpg';
 import datesImg from '../../assets/images/dates.jpg';
 
 const HomeRemedies = () => {
+  const menuItems = [
+    'Cinnamon and Honey',
+    'Food as Medicine',
+    'Eating Fruit to Cure Cancer',
+    'Asparagus for Cancer',
+    'Onions',
+    'Dates'
+  ];
 
-    const menuItems = [
-            "Cinnamon and Honey",
-            "Food as Medicine",
-            "Eating Fruit to Cure Cancer",
-            "Asparagus for Cancer",
-            "Onions",
-            "Dates"
-        ];
-            
-        const [activeSection, setActiveSection] = useState(menuItems[0]);
+  const [activeSection, setActiveSection] = useState(menuItems[0]);
 
-        const benefits = [
-            { title: "KIWI", img: kiwiImg, description: "Tiny but mighty, and a good source of potassium, magnesium, vitamin E & fiber. Its vitamin C content is twice that of an orange!" },
-            { title: "ORANGES", img: orangeImg, description: "Oranges a day may help keep colds away, lower cholesterol, prevent & dissolve kidney stones, and reduce the risk of colon cancer." },
-            { title: "STRAWBERRY", img: strawberryImg, description: "Protective Fruit. Strawberries have the highest total antioxidant power among major fruits & protect the body from cancer-causing, blood vessel-clogging free radicals." },
-            { title: "APPLE", img: appleImg, description: "AN APPLE a day keeps the doctor away? Although an apple has a low vitamin C content, it has antioxidants & flavonoids which enhances the activity of vitamin C, thereby helping to lower the risk of colon cancer, heart attack & stroke." },
-            { title: "WATERMELON", img: watermelonImg, description: "Coolest thirst quencher. Composed of 92% water, it is also packed with a giant dose of Glutathione, which helps boost our immune system. Also a key source of lycopene, the cancer-fighting oxidant. Also found in watermelon: Vitamin C & Potassium." },
-            { title: "GUAVA & PAPAYA", img: papayaguavaImg, description: "Top awards for vitamin C. They are the clear winners for their high vitamin C content. Guava is also rich in fiber, which helps prevent constipation. Papaya is rich in carotene, good for your eyes." },
-            
-        ];
-        
-        // Handle scroll event for automatic highlighting
-        useEffect(() => {
-            const handleScroll = () => {
-            let currentSection = menuItems[0];
-        
-            menuItems.forEach((item) => {
-                const section = document.getElementById(item);
-                if (section) {
-                const rect = section.getBoundingClientRect();
-                if (rect.top <= 150 && rect.bottom >= 150) {
-                    currentSection = item;
-                }
-                }
-            });
-        
-            setActiveSection(currentSection);
-            };
-        
-            window.addEventListener("scroll", handleScroll);
-            return () => window.removeEventListener("scroll", handleScroll);
-        }, [menuItems]);
+  const benefits = [
+    {
+      title: 'KIWI',
+      img: kiwiImg,
+      description:
+        'Tiny but mighty, and a good source of potassium, magnesium, vitamin E & fiber. Its vitamin C content is twice that of an orange!'
+    },
+    {
+      title: 'ORANGES',
+      img: orangeImg,
+      description:
+        'Oranges a day may help keep colds away, lower cholesterol, prevent & dissolve kidney stones, and reduce the risk of colon cancer.'
+    },
+    {
+      title: 'STRAWBERRY',
+      img: strawberryImg,
+      description:
+        'Protective Fruit. Strawberries have the highest total antioxidant power among major fruits & protect the body from cancer-causing, blood vessel-clogging free radicals.'
+    },
+    {
+      title: 'APPLE',
+      img: appleImg,
+      description:
+        'AN APPLE a day keeps the doctor away? Although an apple has a low vitamin C content, it has antioxidants & flavonoids which enhances the activity of vitamin C, thereby helping to lower the risk of colon cancer, heart attack & stroke.'
+    },
+    {
+      title: 'WATERMELON',
+      img: watermelonImg,
+      description:
+        'Coolest thirst quencher. Composed of 92% water, it is also packed with a giant dose of Glutathione, which helps boost our immune system. Also a key source of lycopene, the cancer-fighting oxidant. Also found in watermelon: Vitamin C & Potassium.'
+    },
+    {
+      title: 'GUAVA & PAPAYA',
+      img: papayaguavaImg,
+      description:
+        'Top awards for vitamin C. They are the clear winners for their high vitamin C content. Guava is also rich in fiber, which helps prevent constipation. Papaya is rich in carotene, good for your eyes.'
+    }
+  ];
 
-        return (
-            <div className='bg-[#c5e2b2]'>
-                <div className="font-messiri max-w-full mx-12 shadow-md rounded-lg p-6 flex gap-6">
-                    {/* Left Floating Menu */}
-                    <div className="w-1/5">
-                    <FloatingMenu menuItems={menuItems} activeSection={activeSection} />
-                    </div>
+  useEffect(() => {
+    const handleScroll = () => {
+      let currentSection = menuItems[0];
 
-                    {/* Right Content Section */}
-                    <div className="w-4/5 h-fit overflow-y-auto p-4 border text-green-950">
-                        <h1 className="text-5xl font-bold text-center">Home Remedies</h1>
+      menuItems.forEach((item) => {
+        const section = document.getElementById(item);
+        if (section) {
+          const rect = section.getBoundingClientRect();
+          if (rect.top <= 150 && rect.bottom >= 150) {
+            currentSection = item;
+          }
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [menuItems]);
+
+  return (
+    <div className='bg-[#c5e2b2]'>
+      <div className='font-messiri max-w-full mx-4 md:mx-12 shadow-md rounded-lg p-4 md:p-6 flex flex-col lg:flex-row gap-6'>
+        {/* Left Floating Menu */}
+        <div className='w-full lg:w-1/5'>
+          <FloatingMenu menuItems={menuItems} activeSection={activeSection} />
+        </div>
+
+        {/* Right Content Section */}
+        <div className='w-full lg:w-4/5 h-fit overflow-y-auto p-4 border text-green-950'>
+          <h1 className='text-3xl md:text-5xl font-bold text-center'>Home Remedies</h1>
                         <Element name="Cinnamon and Honey" id="Cinnamon and Honey" className="mt-4">
                             <h3 className="text-3xl font-semibold py-2 text-center underline">Cinnamon and Honey</h3>
                             <div className='grid grid-cols-1 md:grid-cols-2 gap-6 p-4 px-4'>
