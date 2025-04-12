@@ -126,7 +126,11 @@ const Peace = () => {
                         <h4 className='text-indent-8 text-justify'>
                             Take one of the above each day for the next seven days and visualize the awakened state and see how well you can practice it during the day.
                         </h4>
+                    <hr className='border-green-800 my-4 border-[1.5px]' />
                     </Element>
+                    <div>
+                        <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+                    </div>
                 </div>
             </div>
         </div>

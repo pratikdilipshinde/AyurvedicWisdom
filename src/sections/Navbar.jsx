@@ -77,7 +77,7 @@ const Navbar = () => {
       ],
     },
     { link: "Newborn & Parent", path: "/newborn-parent" },
-    { link: "About Mini", path: "/about-mini" },
+    { link: "Chef Mini", path: "/chef-mini" },
   ];
 
   const isParentActive = (path, submenu) => {

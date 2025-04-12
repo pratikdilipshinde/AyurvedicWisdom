@@ -9,7 +9,6 @@ const Healing = () => {
     "Turmeric",
     "Coconut Oil and Alzheimer's Disease",
     "Dengue Fever Remedy",
-    "Healthy Juices",
     "Gout"
   ];
 
@@ -56,14 +55,14 @@ const Healing = () => {
             <div className="grid md:grid-cols-3 gap-6 items-center">
               {/* Main Text */}
               <div className="md:col-span-2 space-y-4">
-                <h4 className='font-semibold text-lg pt-4'>
+                <h4 className='font-semibold text-2xl pt-4 text-center'>
                   Can This Miracle Spice Stop Cancer, Alzheimer's and Arthritis?
                 </h4>
                 <h4 className='text-indent-8 text-justify'>
                   For more than 5,000 years, turmeric has been an important part of Eastern cultural. Valued for its medicinal properties and warm, peppery flavor, this yellow-orange spice has recently earned a name for itself in Western medicine as well.
                 </h4>
                 <h4 className='text-indent-8 text-justify'>
-                  Turmeric comes from the root of the Curcuma longa plant, which is native to southern India, and is widely used as an ingredient in curry dishes and yellow mustard. Research shows this spice as one of natures most powerful potential healers.
+                  Turmeric comes from the root of the Curcuma longa plant, which is native to southern India, and is widely used as an ingredient in curry dishes and yellow mustard. Research shows this spice as one of nature's most powerful potential healers.
                 </h4>
                 <h4 className='text-indent-8 text-justify'>
                   Dr. David Frawely, founder and director of the American Institute for Vedic Studies in Santa Fe, New Mexico said - "If I had only one single herb to depend upon for all possible health and dietary needs, I would without hesitation choose the Indian spice Turmeric. There is little it cannot do in the realm of healing and much that no other herb is able to accomplish."
@@ -86,7 +85,7 @@ const Healing = () => {
                 {/* <h4 className='text-green-800 text-center text-2xl font-bold'>Ashwagandha</h4> */}
               </div>
             </div>
-            <h4 className='font-semibold text-lg pt-4'>
+            <h4 className='font-semibold text-xl pt-4'>
               Turmeric's Beneficial Effects in a Nutshell
             </h4>
             <ul className='list-disc pl-6'>
@@ -96,32 +95,32 @@ const Healing = () => {
               <li>Contains Curcuminoids - fight cancer, arthritis & Alzheimer's</li>
               <li>Protect against childhood leukemia</li>
             </ul>
-            <h4 className='font-semibold text-lg pt-4'>
+            <h4 className='font-semibold text-xl pt-4'>
               Turmeric's Beneficial Effects in a Nutshell
             </h4>
             <h4 className='text-indent-8 text-justify'>
               Turmeric's Active Anti-Inflammatory Ingredient is curcumin -- the pigment that gives turmeric its yellow-orange color, and which is thought to be responsible for many of its medicinal effects.
             </h4>
-            <h4 className='font-semibold text-lg pt-4'>
+            <h4 className='font-semibold text-xl pt-4'>
               Turmeric's Cancer-Fighting Properties
             </h4>
             <h4 className='text-indent-8 text-justify'>
               In India, colon, breast, prostate and lung -- is 10 times lower.
             </h4>
-            <h4 className='font-semibold text-lg pt-4'>
+            <h4 className='font-semibold text-xl pt-4'>
               Turmeric's Essential Role for Your Liver
             </h4>
             <h4 className='text-indent-8 text-justify'>
               Increases bile flow, a detoxification enzyme in the to help body digest fats.
             </h4>
-            <h4 className='font-semibold text-lg pt-4'>
+            <h4 className='font-semibold text-xl pt-4'>
               Turmeric for Heart, Brain and Overall Health
             </h4>
             <h4 className='text-indent-8 text-justify'>
               Turmeric inhibits free radical damage of fats, including cholesterol. Rich in vitamin B6, associated with a reduced risk of heart disease.
               Turmeric's volatile oils also have external anti-bacterial action. Helps prevent bacterial wound infections and accelerate wound healing.
             </h4>
-            <h4 className='font-semibold text-lg pt-4'>
+            <h4 className='font-semibold text-xl pt-4'>
               Turmeric is beneficial for:
             </h4>
             <ul className='list-disc pl-6'>
@@ -129,7 +128,9 @@ const Healing = () => {
               <li>Psoriasis:	Rheumatoid arthritis	Cataracts</li>
               <li>Gallstones:	Muscle regeneration	Inflammatory bowel disease</li>
             </ul>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
+
           <Element name="Coconut Oil and Alzheimer's Disease" id="Coconut Oil and Alzheimer's Disease" className="mt-4">
             <h3 className="text-3xl font-bold py-2 text-center">Coconut Oil and Alzheimer's Disease</h3>
             <h4 className='text-indent-8 text-justify'>
@@ -165,7 +166,9 @@ const Healing = () => {
             <h4 className='text-indent-8 text-justify'>
               The use of MCTs to treat neurological disorders has been around for a number of years, but little has been done to use this knowledge to development treatments for Alzheimer's and other neurological conditions. MCTs and coconut oil are natural products and as such, are not patentable, so drug manufacturers have little interest in researching their therapeutic potential.
             </h4>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
+
           <Element name="Dengue Fever Remedy" id="Dengue Fever Remedy" className="mt-4">
             <h3 className="text-3xl font-bold py-2 text-center">Dengue Fever Remedy</h3>
             <h4 className='text-justify'>
@@ -189,24 +192,9 @@ const Healing = () => {
             <h4 className='text-indent-8 text-justify'>
               It's believed one's body would be overheated when one is down with dengue, papaya juice has a cooling effect. It helps to reduce the level of heat in one's body, thus the fever will go away.
             </h4>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
-          <Element name="Healthy Juices" id="Healthy Juices" className="mt-4">
-            <h3 className="text-3xl font-bold py-2 text-center">Healthy Juices</h3>
-            <ul className='list-disc pl-6'>
-              <li><b>Carrot + Ginger + Apple:</b> Boost and cleanse the system</li>
-              <li><b>Apple + Cucumber + Celery:</b> Prevents cancer, reduces cholesterol, eliminates stomach upset and headache</li>
-              <li><b>Tomato + Carrot + Apple:</b> Improves skin complexion and eliminates bad breath</li>
-              <li><b>Bitter gourd + Apple + Milk:</b> Helps eliminate bad breath and reduce internal body heat</li>
-              <li><b>Orange + Ginger + Cucumber:</b> Improves Skin texture, moisturizes the skin. Reduces body heat</li>
-              <li><b>Pineapple + Apple + Watermelon:</b> Dispels excess salt. Nourishes the bladder and kidney.</li>
-              <li><b>Apple + Cucumber + Kiwi:</b> Improves skin complexion</li>
-              <li><b>Pear & Banana:</b> Regulates sugar content</li>
-              <li><b>Carrot + Apple + Pear + Mango:</b> Counteracts toxicity. Decreases blood pressure. Fights oxidization.</li>
-              <li><b>Honeydew + Grape + Watermelon + Milk:</b> Rich in vitamin C + Vitamin B2. Increase cell activity. Strengthen body immunity.</li>
-              <li><b>Papaya + Pineapple + Milk:</b> Rich in vitamin C, E, Iron. Improve skin complexion. Stabilizes metabolism.</li>
-              <li><b>Banana + Pineapple + Milk:</b> Rich in vitamin with nutritious. Prevents constipation.</li>
-            </ul>
-          </Element>
+
           <Element name="Gout" id="Gout" className="mt-4">
             <h3 className="text-3xl font-semibold py-2 text-center">Gout</h3>
             <h4 className="font-bold text-lg text-center underline">
@@ -230,7 +218,11 @@ const Healing = () => {
               diabetes risk factors improve, but blood pressure drops too
             </p>
             <h4 className='font-bold text-lg text-center'>Gout - blood pressure - heart problems - hypertension - obesity</h4>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
+          <div>
+            <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+          </div>
         </div>
       </div>
     </div>

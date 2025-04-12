@@ -5,6 +5,8 @@ import { FaXmark, FaBars} from 'react-icons/fa6'
 import omLogo from '../assets/images/om.png'
 import onkarLogo from '../assets/images/onkar.png'
 import AudioPlayer from '../components/AudioComponent'
+import miniYTimg from '../assets/images/miniYTimage.png';
+import { FaYoutube } from 'react-icons/fa';
 
 
 const Header = () => {
@@ -39,12 +41,39 @@ const Header = () => {
   
   return (
     // bg-[#347928] sticky top-0 z-30
-    <div className={`bg-green-800 flex justify-between item-center gap-4 lg:px-20 px-4 md:py-9 py-4 `}>
+    <div className={`bg-green-800 flex justify-between item-center lg:px-20 px-4 md:py-9 py-4 `}>
       <div id='logo'>
         <img src={logo} alt='company-logo' className='bg-white border-2 border-green-800 p-1 rounded-md absolute top-0 md:h-[130px] h-[60px] w-auto' />
       </div>
-      <h3 className='font-messiri text-white text-2xl md:text-6xl text-center m-auto'>Ayurvedic Wisdom</h3>
-      {/* <ul className='lg:flex justify-center items-center gap-8 hidden'>
+      <h3 className='font-messiri text-white text-2xl md:text-6xl text-center m-auto md:pl-20 pl-10'>Ayurvedic Wisdom</h3>
+      <div id='minikitchen' className='md:mr-12 mr-10'>
+        <a
+          href="https://www.youtube.com/@Chef_Ayurvedic_Kitchen"
+          target="_blank"
+          rel="Mini's Ayurvedic Kitchen"
+          className=''
+        >
+          <img
+            src={miniYTimg}
+            alt="miniYTimg"
+            className="bg-white border-2 border-white rounded-md absolute top-0 md:h-[130px] h-[60px] md:w-[95px] w-fit"
+          />
+          {/* Hover overlay */}
+          {/* <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-md">
+            <FaYoutube className="text-red-500 text-xl md:text-3xl mb-1" />
+            <span className="text-white text-xs md:text-sm font-semibold">
+              Mini's Ayurvedic Kitchen
+            </span>
+          </div> */}
+        </a>
+      </div>
+    </div>
+
+      
+
+  )
+
+  {/* <ul className='lg:flex justify-center items-center gap-8 hidden'>
         {navItems.map(({ link, path }) => (
           <Link key={path} className='text-[#f3f3f3] text-[15px] uppercase font-semibold cursor-pointer px-3 py-2 dark:text-white rounded-lg hover:bg-red-600 hover:text-white' to={path} spy={true} offset={-100} smooth={true}>{link}</Link>
         ))}
@@ -63,10 +92,7 @@ const Header = () => {
           ))}
         </ul>
       </div> */}
-
-    </div>
-  )
-
+      
   // return (
   //   <>
 

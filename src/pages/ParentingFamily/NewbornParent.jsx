@@ -113,6 +113,11 @@ const Newborns = () => {
             <h4 className='text-indent-8 text-justify'>
                 "To make laundry easier, give each family member their own laundry basket and have them pre-sort their clothes. Children as young as 2 years old can help Mom and Dad fold washcloths Older children can help sort, fold towels and pair socks. Laundry is one of the easiest areas to start in corporating chores that are age appropriate. It also makes the laundry a little more fun when you have a little helper!" said home and lifestyle expert Laura Dellutri.
             </h4>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
+            
+            <div>
+                <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+            </div>
         </div>
     </div>
   )

@@ -82,7 +82,7 @@ const TulsiBenefits = () => {
         </div>
       </div>
       <div>
-        <h3 className="p-4 font-messiri text-base md:text-xl text-green-800 font-normal mt-8 rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+        <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal mt-8 rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
       </div>
     </div>
   );

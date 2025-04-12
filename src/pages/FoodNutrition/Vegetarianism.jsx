@@ -12,12 +12,15 @@ import guavaImg from '../../assets/images/guava.jpg';
 import papayaImg from '../../assets/images/papaya.jpg';
 import tomatoImg from '../../assets/images/tomato.jpg';
 
+import healthyjuicesImg from '../../assets/images/healthyjuices.jpg';
+
 const Vegetarianism = () => {
 
     const menuItems = [
         "Introduction",
         "Enrich Your Life",
-        "Fruits That Heal"
+        "Fruits That Heal",
+        "Healthy Juices"
     ];
         
     const [activeSection, setActiveSection] = useState(menuItems[0]);
@@ -163,7 +166,7 @@ const Vegetarianism = () => {
                                 key={fruit.name}
                                 className="bg-green-100 border border-green-300 rounded-xl shadow-md p-4 hover:shadow-lg transition"
                             >
-                                <h2 className="text-xl font-semibold text-green-800 mb-2">
+                                <h2 className="text-xl font-semibold text-green-800 mb-2 underline">
                                 {fruit.name}
                                 </h2>
                                 <ul className="list-disc list-inside text-green-900 text-sm space-y-1">
@@ -192,7 +195,46 @@ const Vegetarianism = () => {
                             </div>
                             ))}
                         </div>
+                        <hr className='border-green-800 my-4 border-[1.5px]' />
                     </Element>
+                    <Element name="Healthy Juices" id="Healthy Juices" className="mt-4">
+                        <h3 className="text-3xl font-bold py-2 text-center">Healthy Juices</h3>
+                        <div className="grid md:grid-cols-3 gap-6 items-center">
+                            {/* Main Text */}
+                            <div className="md:col-span-2 space-y-4">
+                                <ul className='list-disc pl-6'>
+                                    <li><b>Carrot + Ginger + Apple:</b> Boost and cleanse the system</li>
+                                    <li><b>Apple + Cucumber + Celery:</b> Prevents cancer, reduces cholesterol, eliminates stomach upset and headache</li>
+                                    <li><b>Tomato + Carrot + Apple:</b> Improves skin complexion and eliminates bad breath</li>
+                                    <li><b>Bitter gourd + Apple + Milk:</b> Helps eliminate bad breath and reduce internal body heat</li>
+                                    <li><b>Orange + Ginger + Cucumber:</b> Improves Skin texture, moisturizes the skin. Reduces body heat</li>
+                                    <li><b>Pineapple + Apple + Watermelon:</b> Dispels excess salt. Nourishes the bladder and kidney.</li>
+                                    <li><b>Apple + Cucumber + Kiwi:</b> Improves skin complexion</li>
+                                    <li><b>Pear & Banana:</b> Regulates sugar content</li>
+                                    <li><b>Carrot + Apple + Pear + Mango:</b> Counteracts toxicity. Decreases blood pressure. Fights oxidization.</li>
+                                    <li><b>Honeydew + Grape + Watermelon + Milk:</b> Rich in vitamin C + Vitamin B2. Increase cell activity. Strengthen body immunity.</li>
+                                    <li><b>Papaya + Pineapple + Milk:</b> Rich in vitamin C, E, Iron. Improve skin complexion. Stabilizes metabolism.</li>
+                                    <li><b>Banana + Pineapple + Milk:</b> Rich in vitamin with nutritious. Prevents constipation.</li>
+                                </ul>
+                            </div>
+            
+                            {/* Image 1 */}
+                            <div className="grid-col-1 justify-center m-auto">
+                            <img
+                                src={healthyjuicesImg}
+                                alt="Healthy Juices"
+                                className="rounded-xl shadow-2xl w-full md:w-fit md:h-60"
+                            />
+                            {/* <h4 className='text-green-800 text-center text-2xl font-bold'>Neem Leaf </h4> */}
+                            
+                            </div>
+                        </div>
+                        
+                    <hr className='border-green-800 my-4 border-[1.5px]' />
+                    </Element>
+                    <div>
+                        <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+                    </div>
                 </div>
             </div>
         </div>

@@ -28,7 +28,7 @@ import Recipes from './pages/FoodNutrition/Recipes'
 import Peace from './pages/MindSpirituality/Peace'
 import PowerfulThoughts from './pages/MindSpirituality/PowerfulThoughts'
 import Breathing from './pages/MindSpirituality/Breathing'
-import AboutMini from './pages/AboutMini'
+import ChefMini from './pages/ChefMini'
 import Meditation from './pages/MindSpirituality/Meditation'
 import Prayers from './pages/MindSpirituality/Prayers'
 import Yoga from './pages/MindSpirituality/Yoga'
@@ -46,7 +46,7 @@ const App = () => {
       <main className='main-content'>
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/about-mini' element={<AboutMini />} />
+          <Route path='/chef-mini' element={<ChefMini />} />
           <Route path='/newborn-parent' element={<NewbornParent />} />
 
           <Route path='/wellness' element={<Wellness />} />

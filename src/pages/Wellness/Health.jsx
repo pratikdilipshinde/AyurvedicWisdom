@@ -70,6 +70,7 @@ const Health = () => {
             <h4 className='text-center font-bold text-lg'>Studies show that people who lived to be 100 years old
               were consistent breakfast eaters.
             </h4>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
 
           <Element name="Gout" id="Gout" className="mt-4">
@@ -94,6 +95,7 @@ const Health = () => {
               not only all heart disease risk factors improve and
               diabetes risk factors improve, but blood pressure drops too
             </p>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
 
           <Element name="Drinking Water" id="Drinking Water" className="mt-4">
@@ -116,6 +118,7 @@ const Health = () => {
               <br />
               A University study
             </p>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
 
           <Element name="Protect Your Heart" id="Protect Your Heart" className="mt-4">
@@ -211,7 +214,9 @@ const Health = () => {
               Call your doctor at the first sign of any unusual symptom, even if you don't think it's serious. In terms of heart disease, symptoms including chest pressure, tightness in your jaw, profound fatigue and shortness of breath with activity all may indicate heart problems. Your doctor may recommend more detailed screening to assess your risks, and, if necessary, treatment to help you live a longer, healthier life.
             </h4>
             <h4 className='font-bold text-lg text-center'>20 - 30 - 40 - 50 - or 60 live life to the fullest. Be happy and healthy</h4>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
+
           <Element name="How to Plan Your Meals" id="How to Plan Your Meals" className="mt-4">
             <h3 className="text-3xl font-semibold py-2 text-center">How to Plan Your Meals</h3>
             <p className='text-justify'>
@@ -259,7 +264,9 @@ const Health = () => {
               So, at the end of the festive season, when you put away your party crockery and cutlery, resolve to follow a healthy diet regime - at least for a fortnight. Have a high protein, high fiber diet - and see the extra pounds melt away.
             </p>
             <h4 className='font-bold text-lg text-right'>EXCERPT FROM TATHAASTU</h4>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
+
           <Element name="Blood Sugar and Diabetes" id="Blood Sugar and Diabetes" className="mt-4">
             <h3 className="text-3xl font-semibold py-2 text-center">Blood Sugar and Diabetes</h3>
             <p className='text-justify text-indent-8'>
@@ -300,7 +307,9 @@ const Health = () => {
               Diabetes can be controlled, and in some cases prevented, with diet modifications and weight loss.
             </p>
             <h4 className='font-bold text-lg text-center'>SO EARLY DETECTION IS A MUST</h4>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
+          
           <Element name="7 Don'ts After A Meal" id="7 Don'ts After A Meal" className="mt-4">
             <h3 className="text-3xl font-semibold py-2 text-center">7 Don'ts After A Meal</h3>
             <p className='text-justify'>
@@ -324,7 +333,11 @@ const Health = () => {
             <p className='text-justify'>
               <b>Don't sleep immediately:</b> The food we intake will not be able to digest properly. Thus will lead to gastric problems and infection in our intestine.
             </p>
+            <hr className='border-green-800 my-4 border-[1.5px]' />
           </Element>
+          <div>
+            <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+          </div>
         </div>
       </div>
     </div>

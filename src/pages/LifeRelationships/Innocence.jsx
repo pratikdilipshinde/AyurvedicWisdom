@@ -73,7 +73,11 @@ const Innocence = () => {
                             <li>Her mother replied, "Well, every time that you do something wrong and make me cry or unhappy, one of my hairs turns white".</li>
                             <li>The little girl thought about this revelation for a while and then said, "Momma, how come ALL of grandma's hairs are white"?</li>
                         </ul>
+                    <hr className='border-green-800 my-4 border-[1.5px]' />
                     </Element>
+                    <div>
+                        <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+                    </div>
                 </div>
             </div>
         </div>

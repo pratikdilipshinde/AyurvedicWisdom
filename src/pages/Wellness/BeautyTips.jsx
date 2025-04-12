@@ -126,7 +126,11 @@ const BeautyTips = () => {
                             If you are experiencing any or several of the symptoms, you should talk to your doctor about whether you have acne. It is recommended that you do a skin test before applying any of the above mentioned kitchen remedies. You must verify with your physician before applying this article's suggestions to your individual situation.
                         </h4>
                         <h4 className='font-bold text-lg text-center'>Courtesy DR. INDU ARORA from Tathaatsu</h4>
+                    <hr className='border-green-800 my-4 border-[1.5px]' />
                     </Element>
+                    <div>
+                        <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+                    </div>
                 </div>
             </div>
         </div>

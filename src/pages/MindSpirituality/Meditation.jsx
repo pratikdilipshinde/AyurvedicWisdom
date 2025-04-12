@@ -6,6 +6,8 @@ import meditationImg from '../../assets/images/meditation.jpg';
 import chakra1Img from '../../assets/images/chakra1.jpg';
 import chakra2Img from '../../assets/images/chakra2.jpg';
 
+import godsgraceImg from '../../assets/images/godsgraceImg.jpg';
+
 const Meditation = () => {
 
     const menuItems = [
@@ -55,9 +57,25 @@ const Meditation = () => {
                         but merely opening your hands to receive something better
                         Concentrate on this sentence:
                     </h3>
-                    <h3 className="text-2xl font-semibold pt-2 text-center">
+                    
+                    <div
+                        className="relative rounded-xl w-full h-[250px] bg-cover bg-center flex items-center justify-center text-center my-4"
+                        style={{ backgroundImage: `url(${godsgraceImg})` }}
+                        >
+                        <div className="absolute inset-0 rounded-xl"></div> {/* Optional overlay for better text visibility */}
+                        <div className="relative z-10 px-4">
+                            <h1 className="text-red-600 text-4xl md:text-5xl font-bold bg-black bg-opacity-10 rounded-xl mx-auto w-fit p-2 shadow-2xl">GOD</h1>
+                            <p className="text-red-600 text-3xl font-bold bg-black bg-opacity-10 rounded-xl mx-auto w-fit p-2 shadow-2xl">
+                                will never take you<br />
+                                where his grace will not</p>
+                            <p className="text-red-600 text-xl md:text-4xl font-bold bg-black bg-opacity-10 rounded-xl mx-auto w-fit p-2 shadow-2xl">
+                                protect you
+                            </p>
+                        </div>
+                    </div>
+                    {/* <h3 className="text-2xl font-semibold pt-2 text-center">
                         "God will never take you where his grace will not protect you."
-                    </h3>
+                    </h3> */}
                     <Element name="Reason and Benefits" id="Reason and Benefits" className="mt-4">
                         <h3 className="text-3xl font-semibold py-2 text-center">Reason and Benefits</h3>
                         <h4 className='font-semibold text-lg pt-2'>
@@ -252,6 +270,9 @@ const Meditation = () => {
                         </h4>
                         <hr className='border-green-800 my-4 border-[1.5px]' />
                     </Element>
+                    <div>
+                        <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+                    </div>
                 </div>
             </div>
         </div>

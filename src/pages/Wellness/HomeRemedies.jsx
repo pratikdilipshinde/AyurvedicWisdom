@@ -671,7 +671,11 @@ const HomeRemedies = () => {
                             <h4 className='text-indent-8 text-justify'>
                                 Although dates carry tremendous nutritional values, great care should be taken in their selection because they consists of sticky surface which attracts various impurities in them. Hence, you should consume only those dates that are processed and packed properly. Make sure to wash them thoroughly before consuming. This will help remove the impurities present in them.
                             </h4>
+                            <hr className='border-green-800 my-4 border-[1.5px]' />
                         </Element>
+                        <div>
+                            <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+                        </div>
                     </div>
                 </div>
             </div>

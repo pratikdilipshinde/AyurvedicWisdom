@@ -46,7 +46,7 @@ const Breathing = () => {
                 <div className="lg:w-4/5 w-full h-fit overflow-y-auto p-2 md:p-4 border text-green-950">
                     <h1 className="text-5xl font-bold text-center">Breathing</h1>
                     <Element name="Yoga Breathing" id="Yoga Breathing" className="mt-4">
-                        <h3 className="text-2xl font-semibold py-2 text-center">Yoga Breathing</h3>
+                        <h3 className="text-3xl font-semibold py-2 text-center">Yoga Breathing</h3>
                         <h4 className='font-semibold text-lg pt-2'>
                             PRANAYAM (BREATHING):
                         </h4>
@@ -179,6 +179,9 @@ const Breathing = () => {
                         <h4 className='font-bold text-lg text-center mt-4'>Takes 20-30 minutes morning and evening. Get new lease to life and optimum health.</h4>
                         <hr className='border-green-800 my-4 border-[1.5px]' />
                     </Element>
+                    <div>
+                        <h3 className="p-4 font-messiri text-base md:text-sm text-green-800 font-normal rounded-2xl text-center"><b>Disclaimer:</b> This web site is a collection of material I have received over the years from loved ones, friends, well-wishers and like-minded people who believe in life as a wonderful gift of God. A gift we need to honor and preserve with health, happiness and self respect. If any material infringes on your copyright, please inform us through Email mentioned below and we will remove it.</h3>
+                    </div>
                 </div>
             </div>
         </div>  
