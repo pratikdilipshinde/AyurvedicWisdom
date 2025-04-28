@@ -41,11 +41,27 @@ const Header = () => {
   
   return (
     // bg-[#347928] sticky top-0 z-30
-    <div className={`bg-green-800 flex justify-between item-center lg:px-20 px-4 md:py-9 py-4 `}>
+    <div className={`bg-green-800 flex justify-between item-center lg:px-20 px-4 md:py-[30px] py-4 `}>
       <div id='logo'>
         <img src={logo} alt='company-logo' className='bg-white border-2 border-green-800 p-1 rounded-md absolute top-0 md:h-[130px] h-[60px] w-auto' />
       </div>
-      <h3 className='font-messiri text-white text-2xl md:text-6xl text-center m-auto md:pl-20 pl-10'>Ayurvedic Wisdom</h3>
+      <div>
+        <h3 className="font-messiri text-white text-2xl md:text-6xl text-center m-auto md:pl-20 pl-10">
+          Ayurvedic Wisdom
+        </h3>
+        <div className="flex items-center justify-end md:pr-4 mt-[-10px]">
+          <FaYoutube className="text-red-600 text-xl md:text-xl mr-2" />
+          <a
+            href="https://www.youtube.com/@Chef_Ayurvedic_Kitchen"
+            target="_blank"
+            rel="Mini's Ayurvedic Kitchen"
+            className="font-messiri text-white text-sm underline"
+          >
+            Mini's Ayurvedic Kitchen
+          </a>
+        </div>
+      </div>
+      
       <div id='minikitchen' className='md:mr-12 mr-10'>
         <a
           href="https://www.youtube.com/@Chef_Ayurvedic_Kitchen"
