@@ -39,13 +39,13 @@ import NotFound from './pages/NotFound'
 
 const App = () => {
   return (
-    <>
+    <Router>
       <Header />
       <Navbar />
       <Hero />
       <Banner />
       <main className='main-content'>
-        <Router>
+        
           <Routes>
             <Route path='/' element={<Home />} />
             <Route path='/chef-mini' element={<ChefMini />} />
@@ -82,12 +82,12 @@ const App = () => {
             <Route path="*" element={<NotFound />} />
             
           </Routes>
-        </Router>
+        
       </main>
       {/* <Contact /> */}
       <BackToTop />
       <Footer />
-    </>
+    </Router>
   )
 }
 
