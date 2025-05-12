@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // ✅ Import Link
 
 const CardGrid = ({ title, items }) => {
   const chunkItems = (arr, size) => {
@@ -27,14 +28,14 @@ const CardGrid = ({ title, items }) => {
           }`}
         >
           {rowItems.map((item, idx) => (
-            <a
+            <Link
               key={idx}
-              href={item.path}
+              to={item.path} // ✅ use Link for internal routing
               className="bg-green-50 border border-green-700 rounded-2xl shadow-md w-full max-w-sm py-6 px-8 text-center hover:shadow-lg transition hover:scale-105 cursor-pointer"
             >
               <h3 className="text-3xl font-semibold text-green-900 mb-2">{item.link}</h3>
               <p className="text-green-800 text-base">Click to Read More</p>
-            </a>
+            </Link>
           ))}
         </div>
       ))}
@@ -42,7 +43,7 @@ const CardGrid = ({ title, items }) => {
   );
 };
 
-// Individual pages
+// Pages using CardGrid
 export const Wellness = () => (
   <CardGrid
     title="Wellness"
