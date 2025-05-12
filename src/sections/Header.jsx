@@ -5,7 +5,7 @@ import { FaXmark, FaBars} from 'react-icons/fa6'
 import omLogo from '../assets/images/om.png'
 import onkarLogo from '../assets/images/onkar.png'
 import AudioPlayer from '../components/AudioComponent'
-import miniYTimg from '../assets/images/miniYTimage.png';
+import miniYTimg from '../assets/images/inkitchen.jpg';
 import { FaYoutube } from 'react-icons/fa';
 
 
@@ -41,7 +41,7 @@ const Header = () => {
   
   return (
     // bg-[#347928] sticky top-0 z-30
-    <div className={`bg-green-800 flex justify-between item-center lg:px-20 px-4 md:py-[30px] py-4 `}>
+    <div className={`bg-green-800 flex justify-between item-center lg:px-20 px-4 md:py-[24px] py-4 `}>
       <div id='logo'>
         <img src={logo} alt='company-logo' className='bg-white border-2 border-green-800 p-1 rounded-md absolute top-0 md:h-[130px] h-[60px] w-auto' />
       </div>
@@ -49,13 +49,13 @@ const Header = () => {
         <h3 className="font-messiri text-white text-2xl md:text-6xl text-center m-auto md:pl-20 pl-10">
           Ayurvedic Wisdom
         </h3>
-        <div className="flex items-center justify-end md:pr-4 mt-[-10px]">
+        <div className="flex items-center justify-center md:pl-8 mt-[-10px]">
           <FaYoutube className="text-red-600 text-xl md:text-xl mr-2" />
           <a
             href="https://www.youtube.com/@Chef_Ayurvedic_Kitchen"
             target="_blank"
             rel="Mini's Ayurvedic Kitchen"
-            className="font-messiri text-white text-sm underline"
+            className="font-messiri text-white text-2xl underline"
           >
             Mini's Ayurvedic Kitchen
           </a>
@@ -69,11 +69,11 @@ const Header = () => {
           rel="Mini's Ayurvedic Kitchen"
           className=''
         >
-          <img
+          {/* <img
             src={miniYTimg}
             alt="miniYTimg"
             className="bg-white border-2 border-white rounded-md absolute top-0 md:h-[130px] h-[60px] md:w-[95px] w-fit"
-          />
+          /> */}
           {/* Hover overlay */}
           {/* <div className="absolute inset-0 bg-black/50 flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-md">
             <FaYoutube className="text-red-500 text-xl md:text-3xl mb-1" />

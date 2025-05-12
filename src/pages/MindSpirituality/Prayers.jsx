@@ -10,7 +10,7 @@ import christiantempleImg from '../../assets/images/christiantemple.jpg';
 import lordshivaImg from '../../assets/images/lordshiva.jpg';
 import ganesh1Img from '../../assets/images/ganesh1.png';
 import ganesh2Img from '../../assets/images/ganesh2.png';
-import prayinghandsImg from '../../assets/images/prayinghands.jpg';
+import prayinghandsImg from '../../assets/images/Praying_hands.png';
 
 import mrityunjayaMantra from '../../assets/audio/mmm3.mp3';
 
@@ -274,7 +274,7 @@ const Prayers = () => {
                             </div>
                         </div>
                         <hr className='border-green-800 my-4 border-[1.5px]' />
-                        <h4 className='text-center font-bold text-lg'>
+                        <h4 className='text-orange-800 text-center font-bold text-2xl'>
                             Amazing !<br/>
                             There is only one God, one Lord, one Universal Intelligence<br/>
                             And we ALL pray to that ONE Entity
@@ -376,7 +376,7 @@ const Prayers = () => {
                             <img
                                 src={prayinghandsImg}
                                 alt="Praying Hands"
-                                className="rounded-xl shadow-2xl w-full md:w-fit md:h-56 mx-auto"
+                                className="bg-green-300 rounded-xl shadow-2xl w-full md:w-fit md:h-56 mx-auto"
                             />
                             {/* <h4 className='text-green-800 text-center text-2xl font-bold'>Neem Leaf </h4> */}
                         </div>

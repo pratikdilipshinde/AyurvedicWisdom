@@ -9,6 +9,8 @@ import Mini1998 from '../assets/images/Mini1998.jpg';
 import Mini2008 from '../assets/images/Mini2008.jpg';
 import Mini2014 from '../assets/images/Mini2014.jpg';
 
+import miniYTimg from '../assets/images/inkitchen.jpg';
+
 import aboutminiImg from '../assets/images/minikitchen.jpg';
 
     const ChefMini = () => (
@@ -56,17 +58,20 @@ import aboutminiImg from '../assets/images/minikitchen.jpg';
                     
                     </div>
                 </div>
-                <h4 className='font-semibold text-3xl text-center mt-6'>Her accomplishments</h4>
-                <div className="grid md:grid-cols-3 gap-6 items-center">
+                <hr className='border-green-800 my-4 border-[1.5px]' />
+                <h4 className='font-semibold text-3xl text-center mt-6'>Chef's Story</h4>
+                <div className="grid md:grid-cols-4 gap-6 items-center">
                     {/* Main Text */}
-                    <div className="md:col-span-2 space-y-3">
-                        <ol className="list-decimal pl-8 text-justify text-xl mt-4 space-y-2">
-                            <li>She is an Indian classical dancer. An avid swimmer, horse rider, car racer and much more.</li>
-                            <li>When she cooks, she puts all her love and warm wishes into the food.</li>
-                            <li>Her love and passion are flowers - the art of Ikebana.</li>
-                            <li>She is a licensed beauty consultant and a cosmetologist.</li>
-                            <li>She has home remedies for most minor ailments & shares freely with whoever needs them.</li>  
-                        </ol>
+                    <div className="md:col-span-3 space-y-3">
+                        <h4 className='text-justify text-lg mt-2 text-indent-8'>
+                            I have a passion for cooking and seeing the smile on people's faces when they eat my food. People ask why my food is so tasty, I always say that after cooking I put a bit of love in it.
+                        </h4>
+                        <h4 className='text-justify text-lg mt-2 text-indent-8'>
+                            Each dish should have its own distinctive taste. When combining herbs and spices it is imperative not to allow them to take over the original taste of the item being cooked. Herbs and spices are there to enhance the taste not take away from the importance of the vegetable or grain or lentils.
+                        </h4>
+                        <h4 className='text-justify text-lg mt-2 text-indent-8'>
+                            Being an ardent believer in the Ayurvedic science behind the goodness of the food I use that skill to bring out the best in my food. Lot of research has gone into my recipes to help enhance the Immune system in the body, especially important today, to combat the viruses invading us.
+                        </h4>
                     </div>
     
                     {/* Image 1 */}
@@ -82,8 +87,39 @@ import aboutminiImg from '../assets/images/minikitchen.jpg';
                     {/* <h4 className='text-green-800 text-center text-2xl font-bold'>Neem Leaf </h4> */}
                     
                     </div>
+                    
                 </div>
-                
+                <h4 className='text-justify text-lg mt-2 text-indent-8'>
+                    I have nearly 40 years’ experience in Catering, Event Planning and teaching cooking. Many years as banquet manager of 5 star hotels, Jebel Ali Hotel and The Hilton in Dubai. I had the pleasure of teaching Indian cooking to International chefs.
+                    I also held cooking classes for high school girls and young married ladies in Dubai in the 80’s.
+                </h4>
+                <hr className='border-green-800 my-4 border-[1.5px]' />
+                <h4 className='font-semibold text-3xl text-center mt-6'>Her accomplishments</h4>
+                <div className="grid md:grid-cols-3 gap-6 items-center">
+                    {/* Main Text */}
+                    <div className="md:col-span-2 space-y-3">
+                        <ol className="list-decimal pl-8 text-justify text-xl mt-4 space-y-2">
+                            <li>She is an Indian classical dancer. An avid swimmer, horse rider, car racer and much more.</li>
+                            <li>When she cooks, she puts all her love and warm wishes into the food.</li>
+                            <li>Her love and passion are flowers - the art of Ikebana.</li>
+                            <li>She is a licensed beauty consultant and a cosmetologist.</li>
+                            <li>She has home remedies for most minor ailments & shares freely with whoever needs them.</li>  
+                        </ol>
+                    </div>
+    
+                    {/* Image 1 */}
+                    <div className="grid-col-1 justify-center m-auto">
+                        
+                        <img
+                            src={miniYTimg}
+                            alt="About Mini Image"
+                            className="rounded-xl shadow-2xl w-full md:w-full md:h-60 mx-auto"
+                        />
+                    {/* <h4 className='text-green-800 text-center text-2xl font-bold'>Neem Leaf </h4> */}
+                    
+                    </div>
+                </div>
+                <hr className='border-green-800 my-4 border-[1.5px]' />
                 <h4 className='font-semibold text-3xl text-center mt-4'>She is beautiful inside and out.</h4>
                 <h4 className='font-semibold text-2xl text-center mt-2'>The passage of time has lent her dignity, experience and maturity which can only help to serve others.</h4>
                 <h4 className='font-semibold text-lg text-right mt-2'>(Written by a loving friend)</h4>
@@ -119,7 +155,7 @@ import aboutminiImg from '../assets/images/minikitchen.jpg';
                         <img
                             src={Mini1968}
                             alt="Mini1968"
-                            className="rounded-xl shadow-2xl w-full md:w-fit md:h-56"
+                            className="rounded-xl shadow-2xl w-full md:w-fit md:h-40"
                         />
                         <h4 className='font-semibold text-lg pt-2 text-center'>
                             1968
@@ -129,7 +165,7 @@ import aboutminiImg from '../assets/images/minikitchen.jpg';
                         <img
                             src={Mini1998}
                             alt="Mini1998"
-                            className="rounded-xl shadow-2xl w-full md:w-fit md:h-56"
+                            className="rounded-xl shadow-2xl w-full md:w-fit md:h-40"
                         />
                         <h4 className='font-semibold text-lg pt-2 text-center'>
                             1998
@@ -139,7 +175,7 @@ import aboutminiImg from '../assets/images/minikitchen.jpg';
                         <img
                             src={Mini2008}
                             alt="Mini2008"
-                            className="rounded-xl shadow-2xl w-full md:w-fit md:h-56"
+                            className="rounded-xl shadow-2xl w-full md:w-fit md:h-40"
                         />
                         <h4 className='font-semibold text-lg pt-2 text-center'>
                             2008
@@ -149,7 +185,7 @@ import aboutminiImg from '../assets/images/minikitchen.jpg';
                         <img
                             src={Mini2014}
                             alt="Mini2014"
-                            className="rounded-xl shadow-2xl w-full md:w-fit md:h-56"
+                            className="rounded-xl shadow-2xl w-full md:w-fit md:h-40"
                         />
                         <h4 className='font-semibold text-lg pt-2 text-center'>
                             2014

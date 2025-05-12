@@ -37,7 +37,7 @@ const Footer = () => {
         {/* Copyright Section */}
         <div className="flex items-center justify-center md:justify-end">
           <p className="text-gray-100 text-center md:text-right">
-            © 2015 Ayurvedic Wisdom | All Rights Reserved
+            © 2015 Ayurvedic Wisdom LLC <br /> All Rights Reserved
           </p>
         </div>
 
