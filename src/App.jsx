@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from './sections/Header'
 import Navbar from './sections/Navbar'
 import Hero from './sections/Hero'
@@ -44,42 +45,44 @@ const App = () => {
       <Hero />
       <Banner />
       <main className='main-content'>
-        <Routes>
-          <Route path='/' element={<Home />} />
-          <Route path='/chef-mini' element={<ChefMini />} />
-          <Route path='/newborn-parent' element={<NewbornParent />} />
+        <Router>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/chef-mini' element={<ChefMini />} />
+            <Route path='/newborn-parent' element={<NewbornParent />} />
 
-          <Route path='/wellness' element={<Wellness />} />
-          <Route path='/wellness/health' element={<Health />} />
-          <Route path='/wellness/healing' element={<Healing />} />
-          <Route path='/wellness/home-remedies' element={<HomeRemedies />} />
-          <Route path='/wellness/acupressure' element={<Acupressure />} />
-          <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
+            <Route path='/wellness' element={<Wellness />} />
+            <Route path='/wellness/health' element={<Health />} />
+            <Route path='/wellness/healing' element={<Healing />} />
+            <Route path='/wellness/home-remedies' element={<HomeRemedies />} />
+            <Route path='/wellness/acupressure' element={<Acupressure />} />
+            <Route path='/wellness/beauty-tips' element={<BeautyTips />} />
 
-          <Route path='/food-nutrition' element={<FoodNutrition />} />
-          <Route path='/food-nutrition/vegetarianism' element={<Vegetarianism />} />
-          <Route path='/food-nutrition/recipes' element={<Recipes />} />
+            <Route path='/food-nutrition' element={<FoodNutrition />} />
+            <Route path='/food-nutrition/vegetarianism' element={<Vegetarianism />} />
+            <Route path='/food-nutrition/recipes' element={<Recipes />} />
 
-          <Route path='/mind-spirituality' element={<MindSpirituality />} />
-          <Route path='/mind-spirituality/meditation' element={<Meditation />} />
-          <Route path='/mind-spirituality/prayers' element={<Prayers />} />
-          <Route path='/mind-spirituality/yoga' element={<Yoga />} />
-          <Route path='/mind-spirituality/peace' element={<Peace />} />
-          <Route path='/mind-spirituality/powerful-thoughts' element={<PowerfulThoughts />} />
-          <Route path='/mind-spirituality/breathing' element={<Breathing />} />
+            <Route path='/mind-spirituality' element={<MindSpirituality />} />
+            <Route path='/mind-spirituality/meditation' element={<Meditation />} />
+            <Route path='/mind-spirituality/prayers' element={<Prayers />} />
+            <Route path='/mind-spirituality/yoga' element={<Yoga />} />
+            <Route path='/mind-spirituality/peace' element={<Peace />} />
+            <Route path='/mind-spirituality/powerful-thoughts' element={<PowerfulThoughts />} />
+            <Route path='/mind-spirituality/breathing' element={<Breathing />} />
 
-          <Route path='/life-relationships' element={<LifeRelationships />} />
-          <Route path='/life-relationships/determination' element={<Determination />} />
-          <Route path='/life-relationships/life' element={<Life />} />
-          <Route path='/life-relationships/love' element={<Love />} />
-          <Route path='/life-relationships/happiness' element={<Happiness />} />
-          <Route path='/life-relationships/innocence' element={<Innocence />} />
-          <Route path='/life-relationships/laughter' element={<Laughter />} />
-          <Route path='/life-relationships/friendship' element={<Friendship />} />
+            <Route path='/life-relationships' element={<LifeRelationships />} />
+            <Route path='/life-relationships/determination' element={<Determination />} />
+            <Route path='/life-relationships/life' element={<Life />} />
+            <Route path='/life-relationships/love' element={<Love />} />
+            <Route path='/life-relationships/happiness' element={<Happiness />} />
+            <Route path='/life-relationships/innocence' element={<Innocence />} />
+            <Route path='/life-relationships/laughter' element={<Laughter />} />
+            <Route path='/life-relationships/friendship' element={<Friendship />} />
 
-          <Route path="*" element={<NotFound />} />
-          
-        </Routes>
+            <Route path="*" element={<NotFound />} />
+            
+          </Routes>
+        </Router>
       </main>
       {/* <Contact /> */}
       <BackToTop />
