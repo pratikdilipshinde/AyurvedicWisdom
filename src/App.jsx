@@ -39,7 +39,7 @@ import NotFound from './pages/NotFound'
 
 const App = () => {
   return (
-    <Router>
+    <>
       <Header />
       <Navbar />
       <Hero />
@@ -87,7 +87,7 @@ const App = () => {
       {/* <Contact /> */}
       <BackToTop />
       <Footer />
-    </Router>
+    </>
   )
 }
 
